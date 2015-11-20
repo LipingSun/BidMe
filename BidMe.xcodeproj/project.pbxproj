@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		EED9F8AF1BFEA64100B1688C /* BidMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BidMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED9F8B21BFEA64100B1688C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EED9F8B41BFEA64100B1688C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EED9F8B41BFEA64100B1688C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		EED9F8B71BFEA64100B1688C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EED9F8BA1BFEA64100B1688C /* BidMe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BidMe.xcdatamodel; sourceTree = "<group>"; };
 		EED9F8BC1BFEA64100B1688C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,11 +99,13 @@
 		EED9F8B11BFEA64100B1688C /* BidMe */ = {
 			isa = PBXGroup;
 			children = (
+				EED9F8E71BFEA96000B1688C /* Helpers */,
+				EED9F8E61BFEA94800B1688C /* Stores */,
+				EED9F8E31BFEA87200B1688C /* Models */,
+				EED9F8E51BFEA8DD00B1688C /* Views */,
+				EED9F8E41BFEA88D00B1688C /* Controllers */,
 				EED9F8B21BFEA64100B1688C /* AppDelegate.swift */,
-				EED9F8B41BFEA64100B1688C /* ViewController.swift */,
-				EED9F8B61BFEA64100B1688C /* Main.storyboard */,
 				EED9F8BC1BFEA64100B1688C /* Assets.xcassets */,
-				EED9F8BE1BFEA64100B1688C /* LaunchScreen.storyboard */,
 				EED9F8C11BFEA64100B1688C /* Info.plist */,
 				EED9F8B91BFEA64100B1688C /* BidMe.xcdatamodeld */,
 			);
@@ -126,6 +128,44 @@
 				EED9F8D71BFEA64100B1688C /* Info.plist */,
 			);
 			path = BidMeUITests;
+			sourceTree = "<group>";
+		};
+		EED9F8E31BFEA87200B1688C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EED9F8E41BFEA88D00B1688C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EED9F8B41BFEA64100B1688C /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EED9F8E51BFEA8DD00B1688C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EED9F8B61BFEA64100B1688C /* Main.storyboard */,
+				EED9F8BE1BFEA64100B1688C /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EED9F8E61BFEA94800B1688C /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		EED9F8E71BFEA96000B1688C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +346,7 @@
 				EED9F8B71BFEA64100B1688C /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		EED9F8BE1BFEA64100B1688C /* LaunchScreen.storyboard */ = {
@@ -314,6 +355,7 @@
 				EED9F8BF1BFEA64100B1688C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -407,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BidMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.cmpe277.project.BidMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BidMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.cmpe277.project.BidMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -491,6 +535,7 @@
 				EED9F8DC1BFEA64100B1688C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EED9F8DD1BFEA64100B1688C /* Build configuration list for PBXNativeTarget "BidMeTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +544,7 @@
 				EED9F8DF1BFEA64100B1688C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EED9F8E01BFEA64100B1688C /* Build configuration list for PBXNativeTarget "BidMeUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +553,7 @@
 				EED9F8E21BFEA64100B1688C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
