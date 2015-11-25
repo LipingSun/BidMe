@@ -4,14 +4,20 @@
 # use_frameworks!
 
 target 'BidMe' do
+    
+pod 'AVOSCloudDynamic'
 
 end
 
 target 'BidMeTests' do
 
+pod 'AVOSCloudDynamic'
+
 end
 
 target 'BidMeUITests' do
+
+pod 'AVOSCloudDynamic'
 
 end
 
