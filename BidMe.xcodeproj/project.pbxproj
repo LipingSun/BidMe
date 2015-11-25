@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F555870FB1D1F966CFAF601 /* libPods-BidMeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDA2F3FBF8144D809056151 /* libPods-BidMeTests.a */; };
+		E09822B2F09E6F9FE9A97415 /* libPods-BidMeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F780E23AEEDDBD010C697E3A /* libPods-BidMeUITests.a */; };
 		EE76BEA01C012F4F00780BBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE76BE9F1C012F4F00780BBE /* Main.storyboard */; };
 		EE76BEA21C012F6A00780BBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE76BEA11C012F6A00780BBE /* LaunchScreen.storyboard */; };
 		EE76BEA41C012F8A00780BBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE76BEA31C012F8A00780BBE /* ViewController.swift */; };
+		EE9D3CA41C05D4CA000D91D3 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9D3C9F1C05D4CA000D91D3 /* Payment.swift */; };
+		EE9D3CA51C05D4CA000D91D3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9D3CA01C05D4CA000D91D3 /* Item.swift */; };
+		EE9D3CA61C05D4CA000D91D3 /* Auction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9D3CA11C05D4CA000D91D3 /* Auction.swift */; };
+		EE9D3CA71C05D4CA000D91D3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9D3CA21C05D4CA000D91D3 /* User.swift */; };
+		EE9D3CA81C05D4CA000D91D3 /* Bidding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9D3CA31C05D4CA000D91D3 /* Bidding.swift */; };
+		EE9D3CAD1C05D500000D91D3 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9D3CAA1C05D500000D91D3 /* UserTests.swift */; };
+		EE9D3CAE1C05D500000D91D3 /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9D3CAB1C05D500000D91D3 /* ItemTests.swift */; };
+		EE9D3CAF1C05D500000D91D3 /* AuctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9D3CAC1C05D500000D91D3 /* AuctionTests.swift */; };
 		EED9F8B31BFEA64100B1688C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED9F8B21BFEA64100B1688C /* AppDelegate.swift */; };
 		EED9F8BB1BFEA64100B1688C /* BidMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EED9F8B91BFEA64100B1688C /* BidMe.xcdatamodeld */; };
 		EED9F8BD1BFEA64100B1688C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED9F8BC1BFEA64100B1688C /* Assets.xcassets */; };
 		EED9F8CB1BFEA64100B1688C /* BidMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED9F8CA1BFEA64100B1688C /* BidMeTests.swift */; };
 		EED9F8D61BFEA64100B1688C /* BidMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED9F8D51BFEA64100B1688C /* BidMeUITests.swift */; };
+		F13A34076E0B15DB19D319A1 /* libPods-BidMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95857DF27B26A250C8CA2668 /* libPods-BidMe.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +46,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33AC1A58345DC6BCC8E74F90 /* Pods-BidMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BidMeTests/Pods-BidMeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		75BFEC854A0DB8FFA2AEDB2F /* Pods-BidMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-BidMe/Pods-BidMe.release.xcconfig"; sourceTree = "<group>"; };
+		95857DF27B26A250C8CA2668 /* libPods-BidMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BidMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A45AC84D6A7C2416B16E3F24 /* Pods-BidMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidMeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BidMeUITests/Pods-BidMeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A498D6EEA43B17D6EEF52F6C /* Pods-BidMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidMeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BidMeTests/Pods-BidMeTests.release.xcconfig"; sourceTree = "<group>"; };
+		DC2A14618429B76FB4068A11 /* Pods-BidMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BidMeUITests/Pods-BidMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DCDA2F3FBF8144D809056151 /* libPods-BidMeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BidMeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE76BE9F1C012F4F00780BBE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EE76BEA11C012F6A00780BBE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE76BEA31C012F8A00780BBE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE9D3C9F1C05D4CA000D91D3 /* Payment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		EE9D3CA01C05D4CA000D91D3 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		EE9D3CA11C05D4CA000D91D3 /* Auction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auction.swift; sourceTree = "<group>"; };
+		EE9D3CA21C05D4CA000D91D3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EE9D3CA31C05D4CA000D91D3 /* Bidding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bidding.swift; sourceTree = "<group>"; };
+		EE9D3CAA1C05D500000D91D3 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
+		EE9D3CAB1C05D500000D91D3 /* ItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
+		EE9D3CAC1C05D500000D91D3 /* AuctionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionTests.swift; sourceTree = "<group>"; };
 		EED9F8AF1BFEA64100B1688C /* BidMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BidMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED9F8B21BFEA64100B1688C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EED9F8BA1BFEA64100B1688C /* BidMe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BidMe.xcdatamodel; sourceTree = "<group>"; };
@@ -49,6 +75,8 @@
 		EED9F8D11BFEA64100B1688C /* BidMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BidMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED9F8D51BFEA64100B1688C /* BidMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidMeUITests.swift; sourceTree = "<group>"; };
 		EED9F8D71BFEA64100B1688C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F780E23AEEDDBD010C697E3A /* libPods-BidMeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BidMeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE02315450D99DCB930CBACF /* Pods-BidMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BidMe/Pods-BidMe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F13A34076E0B15DB19D319A1 /* libPods-BidMe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F555870FB1D1F966CFAF601 /* libPods-BidMeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +100,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E09822B2F09E6F9FE9A97415 /* libPods-BidMeUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C570ECE915ADDEDDB000543 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE02315450D99DCB930CBACF /* Pods-BidMe.debug.xcconfig */,
+				75BFEC854A0DB8FFA2AEDB2F /* Pods-BidMe.release.xcconfig */,
+				33AC1A58345DC6BCC8E74F90 /* Pods-BidMeTests.debug.xcconfig */,
+				A498D6EEA43B17D6EEF52F6C /* Pods-BidMeTests.release.xcconfig */,
+				DC2A14618429B76FB4068A11 /* Pods-BidMeUITests.debug.xcconfig */,
+				A45AC84D6A7C2416B16E3F24 /* Pods-BidMeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC2C78F208A6E616B705328B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95857DF27B26A250C8CA2668 /* libPods-BidMe.a */,
+				DCDA2F3FBF8144D809056151 /* libPods-BidMeTests.a */,
+				F780E23AEEDDBD010C697E3A /* libPods-BidMeUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE9D3CA91C05D4E7000D91D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE9D3CAA1C05D500000D91D3 /* UserTests.swift */,
+				EE9D3CAB1C05D500000D91D3 /* ItemTests.swift */,
+				EE9D3CAC1C05D500000D91D3 /* AuctionTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		EED9F8A61BFEA64100B1688C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +147,8 @@
 				EED9F8C91BFEA64100B1688C /* BidMeTests */,
 				EED9F8D41BFEA64100B1688C /* BidMeUITests */,
 				EED9F8B01BFEA64100B1688C /* Products */,
+				4C570ECE915ADDEDDB000543 /* Pods */,
+				DC2C78F208A6E616B705328B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +181,7 @@
 		EED9F8C91BFEA64100B1688C /* BidMeTests */ = {
 			isa = PBXGroup;
 			children = (
+				EE9D3CA91C05D4E7000D91D3 /* Models */,
 				EED9F8CA1BFEA64100B1688C /* BidMeTests.swift */,
 				EED9F8CC1BFEA64100B1688C /* Info.plist */,
 			);
@@ -133,6 +200,11 @@
 		EED9F8E31BFEA87200B1688C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EE9D3CA21C05D4CA000D91D3 /* User.swift */,
+				EE9D3CA01C05D4CA000D91D3 /* Item.swift */,
+				EE9D3CA11C05D4CA000D91D3 /* Auction.swift */,
+				EE9D3CA31C05D4CA000D91D3 /* Bidding.swift */,
+				EE9D3C9F1C05D4CA000D91D3 /* Payment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EED9F8DA1BFEA64100B1688C /* Build configuration list for PBXNativeTarget "BidMe" */;
 			buildPhases = (
+				A87C82DEA7D4F319F714DB2C /* Check Pods Manifest.lock */,
 				EED9F8AB1BFEA64100B1688C /* Sources */,
 				EED9F8AC1BFEA64100B1688C /* Frameworks */,
 				EED9F8AD1BFEA64100B1688C /* Resources */,
+				273009C7E16C7ED186946B92 /* Embed Pods Frameworks */,
+				AD787D741ECC0E1F7115F692 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,9 +267,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EED9F8DD1BFEA64100B1688C /* Build configuration list for PBXNativeTarget "BidMeTests" */;
 			buildPhases = (
+				B56B82F1FCA092C0B53F6F49 /* Check Pods Manifest.lock */,
 				EED9F8C21BFEA64100B1688C /* Sources */,
 				EED9F8C31BFEA64100B1688C /* Frameworks */,
 				EED9F8C41BFEA64100B1688C /* Resources */,
+				246CE68173683130D7AE5A5A /* Embed Pods Frameworks */,
+				A4EBE22CE69707E5F67018A2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,9 +288,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EED9F8E01BFEA64100B1688C /* Build configuration list for PBXNativeTarget "BidMeUITests" */;
 			buildPhases = (
+				B01458E289BACC92127DAF4B /* Check Pods Manifest.lock */,
 				EED9F8CD1BFEA64100B1688C /* Sources */,
 				EED9F8CE1BFEA64100B1688C /* Frameworks */,
 				EED9F8CF1BFEA64100B1688C /* Resources */,
+				141388DBBA7EB3AFC8862898 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,14 +377,142 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		141388DBBA7EB3AFC8862898 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BidMeUITests/Pods-BidMeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		246CE68173683130D7AE5A5A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BidMeTests/Pods-BidMeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		273009C7E16C7ED186946B92 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BidMe/Pods-BidMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4EBE22CE69707E5F67018A2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BidMeTests/Pods-BidMeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A87C82DEA7D4F319F714DB2C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD787D741ECC0E1F7115F692 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BidMe/Pods-BidMe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B01458E289BACC92127DAF4B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B56B82F1FCA092C0B53F6F49 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EED9F8AB1BFEA64100B1688C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE9D3CA51C05D4CA000D91D3 /* Item.swift in Sources */,
+				EE9D3CA81C05D4CA000D91D3 /* Bidding.swift in Sources */,
+				EE9D3CA61C05D4CA000D91D3 /* Auction.swift in Sources */,
 				EE76BEA41C012F8A00780BBE /* ViewController.swift in Sources */,
 				EED9F8BB1BFEA64100B1688C /* BidMe.xcdatamodeld in Sources */,
+				EE9D3CA41C05D4CA000D91D3 /* Payment.swift in Sources */,
 				EED9F8B31BFEA64100B1688C /* AppDelegate.swift in Sources */,
+				EE9D3CA71C05D4CA000D91D3 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +520,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE9D3CAD1C05D500000D91D3 /* UserTests.swift in Sources */,
 				EED9F8CB1BFEA64100B1688C /* BidMeTests.swift in Sources */,
+				EE9D3CAE1C05D500000D91D3 /* ItemTests.swift in Sources */,
+				EE9D3CAF1C05D500000D91D3 /* AuctionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +636,7 @@
 		};
 		EED9F8DB1BFEA64100B1688C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE02315450D99DCB930CBACF /* Pods-BidMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BidMe/Info.plist;
@@ -437,6 +649,7 @@
 		};
 		EED9F8DC1BFEA64100B1688C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75BFEC854A0DB8FFA2AEDB2F /* Pods-BidMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BidMe/Info.plist;
@@ -449,6 +662,7 @@
 		};
 		EED9F8DE1BFEA64100B1688C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33AC1A58345DC6BCC8E74F90 /* Pods-BidMeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BidMeTests/Info.plist;
@@ -461,6 +675,7 @@
 		};
 		EED9F8DF1BFEA64100B1688C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A498D6EEA43B17D6EEF52F6C /* Pods-BidMeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BidMeTests/Info.plist;
@@ -473,6 +688,7 @@
 		};
 		EED9F8E11BFEA64100B1688C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC2A14618429B76FB4068A11 /* Pods-BidMeUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = BidMeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -485,6 +701,7 @@
 		};
 		EED9F8E21BFEA64100B1688C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A45AC84D6A7C2416B16E3F24 /* Pods-BidMeUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = BidMeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

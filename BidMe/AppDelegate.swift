@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import AVOSCloud
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        User.registerSubclass()
+        Item.registerSubclass()
+        Auction.registerSubclass()
+        Bidding.registerSubclass()
+        Payment.registerSubclass()
+        
+        // US Network Node
+        AVOSCloud.useAVCloudUS()
+        AVOSCloud.setApplicationId("tH1AMIWd6vHGSLO5Jn5EaBC7", clientKey: "TC1mHol4exEP8InB59m0u8ct")
+        
+        // China Network Node
+        // AVOSCloud.setApplicationId("b54PwMN1H6mnJTFmMlFQyHql", clientKey: "zDRARxxTnR2lqsGqTM83phxe")
+        
+        AVOSCloud.setAllLogsEnabled(true)
+        
         return true
     }
 
