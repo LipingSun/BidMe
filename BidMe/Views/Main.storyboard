@@ -41,7 +41,7 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3v3-LZ-U2n" id="kj7-0t-fiw">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -90,7 +90,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="tuh-zE-Pcs">
-                        <barButtonItem key="leftBarButtonItem" title="Open Test Conflict" id="Xo8-za-G0G"/>
+                        <barButtonItem key="leftBarButtonItem" title="Open" id="Xo8-za-G0G"/>
                     </navigationItem>
                     <connections>
                         <outlet property="Open" destination="Xo8-za-G0G" id="cDC-1T-ICq"/>
