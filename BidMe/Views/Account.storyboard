@@ -64,6 +64,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="llu-YR-sbp" eventType="touchUpInside" id="WzV-Qf-UfB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -99,6 +102,10 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="password" destination="8MZ-3n-fUX" id="nMf-Ua-Wtj"/>
+                        <outlet property="userName" destination="iC8-oo-yJO" id="esb-xV-nnD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gn8-cT-akY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
