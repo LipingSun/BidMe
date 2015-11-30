@@ -104,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="845.5" y="201.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="9Nt-Ml-eDe">
             <objects>
-                <viewController storyboardIdentifier="RegisterViewController" id="Qqt-LV-Rlo" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterViewController" id="Qqt-LV-Rlo" customClass="RegisterViewController" customModule="BidMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ltm-0t-YlE"/>
                         <viewControllerLayoutGuide type="bottom" id="ooA-AN-2cp"/>
@@ -200,6 +200,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="registerButtonPressed:" destination="Qqt-LV-Rlo" eventType="touchUpInside" id="Dqv-4Z-adk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -233,6 +236,15 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="desc" destination="Bau-oo-yGi" id="VUK-ab-M71"/>
+                        <outlet property="email" destination="PQX-eC-os6" id="rII-HP-UNT"/>
+                        <outlet property="firstName" destination="Zko-o1-NMz" id="eAA-XL-1hJ"/>
+                        <outlet property="lastName" destination="BUd-hq-4Kc" id="igb-mY-F8h"/>
+                        <outlet property="password" destination="cbe-fB-Ssi" id="8zS-5G-0Kb"/>
+                        <outlet property="phone" destination="wH0-L9-Qf9" id="aKV-Fd-gkU"/>
+                        <outlet property="userName" destination="j8y-Ff-Cl4" id="8Ub-Wc-nkh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGQ-SB-qEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
