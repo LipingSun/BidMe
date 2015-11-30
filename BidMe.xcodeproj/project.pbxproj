@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A4002AE1C07C4120054774D /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4002A91C07C4120054774D /* History.storyboard */; settings = {ASSET_TAGS = (); }; };
-		0A4002AF1C07C4120054774D /* OngoingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4002AA1C07C4120054774D /* OngoingTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		0A4002B01C07C4120054774D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4002AB1C07C4120054774D /* Product.swift */; settings = {ASSET_TAGS = (); }; };
-		0A4002B11C07C4120054774D /* PurchasedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4002AC1C07C4120054774D /* PurchasedTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		0A4002B21C07C4120054774D /* SoldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4002AD1C07C4120054774D /* SoldTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		0A4002B41C07C47C0054774D /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4002B31C07C47C0054774D /* Account.storyboard */; settings = {ASSET_TAGS = (); }; };
-		8CEBFD991C02CA4900E47907 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CEBFD981C02CA4900E47907 /* SWRevealViewController.m */; };
+		0A4002AE1C07C4120054774D /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4002A91C07C4120054774D /* History.storyboard */; };
+		0A4002AF1C07C4120054774D /* OngoingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4002AA1C07C4120054774D /* OngoingTableViewCell.swift */; };
+		0A4002B01C07C4120054774D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4002AB1C07C4120054774D /* Product.swift */; };
+		0A4002B11C07C4120054774D /* PurchasedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4002AC1C07C4120054774D /* PurchasedTableViewCell.swift */; };
+		0A4002B21C07C4120054774D /* SoldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4002AD1C07C4120054774D /* SoldTableViewCell.swift */; };
+		0A4002B41C07C47C0054774D /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4002B31C07C47C0054774D /* Account.storyboard */; };
+		1372C66CB4EB26CF9D677645 /* libPods-BidMeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE03A0B225338D9AFC023CE /* libPods-BidMeUITests.a */; };
+		9284C5E957FEB2AB2516F662 /* libPods-BidMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CECEF525AB856385A387B0F /* libPods-BidMe.a */; };
+		B090570DA3CAACEA0CD6DAF1 /* libPods-BidMeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D94375095A259CCA4FDBB60 /* libPods-BidMeTests.a */; };
+		EE16F1F71C0CEF6D00B62C2B /* Auction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE16F1F21C0CEF6D00B62C2B /* Auction.swift */; };
+		EE16F1F81C0CEF6D00B62C2B /* Bidding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE16F1F31C0CEF6D00B62C2B /* Bidding.swift */; };
+		EE16F1F91C0CEF6D00B62C2B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE16F1F41C0CEF6D00B62C2B /* Item.swift */; };
+		EE16F1FA1C0CEF6D00B62C2B /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE16F1F51C0CEF6D00B62C2B /* Payment.swift */; };
+		EE16F1FB1C0CEF6D00B62C2B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE16F1F61C0CEF6D00B62C2B /* User.swift */; };
+		EE16F1FF1C0CF5CF00B62C2B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE16F1FE1C0CF5CF00B62C2B /* SWRevealViewController.m */; };
 		EE76BEA01C012F4F00780BBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE76BE9F1C012F4F00780BBE /* Main.storyboard */; };
 		EE76BEA21C012F6A00780BBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE76BEA11C012F6A00780BBE /* LaunchScreen.storyboard */; };
 		EE76BEA41C012F8A00780BBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE76BEA31C012F8A00780BBE /* ViewController.swift */; };
@@ -48,9 +56,23 @@
 		0A4002AC1C07C4120054774D /* PurchasedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchasedTableViewCell.swift; sourceTree = "<group>"; };
 		0A4002AD1C07C4120054774D /* SoldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoldTableViewCell.swift; sourceTree = "<group>"; };
 		0A4002B31C07C47C0054774D /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
-		8CEBFD961C02CA4900E47907 /* BidMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BidMe-Bridging-Header.h"; sourceTree = "<group>"; };
-		8CEBFD971C02CA4900E47907 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		8CEBFD981C02CA4900E47907 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		3BE03A0B225338D9AFC023CE /* libPods-BidMeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BidMeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C2E852018E7A0D4267A548B /* Pods-BidMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidMeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BidMeUITests/Pods-BidMeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7D94375095A259CCA4FDBB60 /* libPods-BidMeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BidMeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81633CD6820BDB67E39E377E /* Pods-BidMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BidMeTests/Pods-BidMeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9CECEF525AB856385A387B0F /* libPods-BidMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BidMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7C15B02D9632A480D8F5B02 /* Pods-BidMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BidMe/Pods-BidMe.debug.xcconfig"; sourceTree = "<group>"; };
+		ABE625729F33E2B9E6786727 /* Pods-BidMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidMeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BidMeTests/Pods-BidMeTests.release.xcconfig"; sourceTree = "<group>"; };
+		DE36160A747F46FD1514D4AB /* Pods-BidMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BidMeUITests/Pods-BidMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ECBF21F4A6D4F48C623ACF37 /* Pods-BidMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-BidMe/Pods-BidMe.release.xcconfig"; sourceTree = "<group>"; };
+		EE16F1F21C0CEF6D00B62C2B /* Auction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auction.swift; sourceTree = "<group>"; };
+		EE16F1F31C0CEF6D00B62C2B /* Bidding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bidding.swift; sourceTree = "<group>"; };
+		EE16F1F41C0CEF6D00B62C2B /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		EE16F1F51C0CEF6D00B62C2B /* Payment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		EE16F1F61C0CEF6D00B62C2B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EE16F1FC1C0CF5AB00B62C2B /* BidMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BidMe-Bridging-Header.h"; sourceTree = "<group>"; };
+		EE16F1FD1C0CF5C900B62C2B /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		EE16F1FE1C0CF5CF00B62C2B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		EE76BE9F1C012F4F00780BBE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EE76BEA11C012F6A00780BBE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE76BEA31C012F8A00780BBE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9284C5E957FEB2AB2516F662 /* libPods-BidMe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B090570DA3CAACEA0CD6DAF1 /* libPods-BidMeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +110,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1372C66CB4EB26CF9D677645 /* libPods-BidMeUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95619672B1BA7A0B9FF8E03D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7C15B02D9632A480D8F5B02 /* Pods-BidMe.debug.xcconfig */,
+				ECBF21F4A6D4F48C623ACF37 /* Pods-BidMe.release.xcconfig */,
+				81633CD6820BDB67E39E377E /* Pods-BidMeTests.debug.xcconfig */,
+				ABE625729F33E2B9E6786727 /* Pods-BidMeTests.release.xcconfig */,
+				DE36160A747F46FD1514D4AB /* Pods-BidMeUITests.debug.xcconfig */,
+				5C2E852018E7A0D4267A548B /* Pods-BidMeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA8788D5AED62FBD32CDA5F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CECEF525AB856385A387B0F /* libPods-BidMe.a */,
+				7D94375095A259CCA4FDBB60 /* libPods-BidMeTests.a */,
+				3BE03A0B225338D9AFC023CE /* libPods-BidMeUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EED9F8A61BFEA64100B1688C = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +147,8 @@
 				EED9F8C91BFEA64100B1688C /* BidMeTests */,
 				EED9F8D41BFEA64100B1688C /* BidMeUITests */,
 				EED9F8B01BFEA64100B1688C /* Products */,
+				95619672B1BA7A0B9FF8E03D /* Pods */,
+				EA8788D5AED62FBD32CDA5F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,10 +173,10 @@
 				EED9F8B21BFEA64100B1688C /* AppDelegate.swift */,
 				EED9F8BC1BFEA64100B1688C /* Assets.xcassets */,
 				EED9F8C11BFEA64100B1688C /* Info.plist */,
+				EE16F1FC1C0CF5AB00B62C2B /* BidMe-Bridging-Header.h */,
+				EE16F1FD1C0CF5C900B62C2B /* SWRevealViewController.h */,
+				EE16F1FE1C0CF5CF00B62C2B /* SWRevealViewController.m */,
 				EED9F8B91BFEA64100B1688C /* BidMe.xcdatamodeld */,
-				8CEBFD971C02CA4900E47907 /* SWRevealViewController.h */,
-				8CEBFD981C02CA4900E47907 /* SWRevealViewController.m */,
-				8CEBFD961C02CA4900E47907 /* BidMe-Bridging-Header.h */,
 			);
 			path = BidMe;
 			sourceTree = "<group>";
@@ -152,6 +202,11 @@
 		EED9F8E31BFEA87200B1688C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EE16F1F21C0CEF6D00B62C2B /* Auction.swift */,
+				EE16F1F31C0CEF6D00B62C2B /* Bidding.swift */,
+				EE16F1F41C0CEF6D00B62C2B /* Item.swift */,
+				EE16F1F51C0CEF6D00B62C2B /* Payment.swift */,
+				EE16F1F61C0CEF6D00B62C2B /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EED9F8DA1BFEA64100B1688C /* Build configuration list for PBXNativeTarget "BidMe" */;
 			buildPhases = (
+				E94D8EEE79C08C0053057599 /* Check Pods Manifest.lock */,
 				EED9F8AB1BFEA64100B1688C /* Sources */,
 				EED9F8AC1BFEA64100B1688C /* Frameworks */,
 				EED9F8AD1BFEA64100B1688C /* Resources */,
+				981DB75726F3BAFC207D054D /* Embed Pods Frameworks */,
+				482AA877141BECA54B860AFD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,9 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EED9F8DD1BFEA64100B1688C /* Build configuration list for PBXNativeTarget "BidMeTests" */;
 			buildPhases = (
+				5F17DEF451FF3B1379AAB7C5 /* Check Pods Manifest.lock */,
 				EED9F8C21BFEA64100B1688C /* Sources */,
 				EED9F8C31BFEA64100B1688C /* Frameworks */,
 				EED9F8C41BFEA64100B1688C /* Resources */,
+				2A63CDE255BA848BA93E33D9 /* Embed Pods Frameworks */,
+				1F2A229329DFE15C12FCB7F9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,9 +296,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EED9F8E01BFEA64100B1688C /* Build configuration list for PBXNativeTarget "BidMeUITests" */;
 			buildPhases = (
+				AB94D207EF89000FB5EF7755 /* Check Pods Manifest.lock */,
 				EED9F8CD1BFEA64100B1688C /* Sources */,
 				EED9F8CE1BFEA64100B1688C /* Frameworks */,
 				EED9F8CF1BFEA64100B1688C /* Resources */,
+				F2C47FEB344913A3D9700E66 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -324,17 +387,145 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F2A229329DFE15C12FCB7F9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BidMeTests/Pods-BidMeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A63CDE255BA848BA93E33D9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BidMeTests/Pods-BidMeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		482AA877141BECA54B860AFD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BidMe/Pods-BidMe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F17DEF451FF3B1379AAB7C5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		981DB75726F3BAFC207D054D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BidMe/Pods-BidMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB94D207EF89000FB5EF7755 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E94D8EEE79C08C0053057599 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F2C47FEB344913A3D9700E66 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BidMeUITests/Pods-BidMeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EED9F8AB1BFEA64100B1688C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE16F1FF1C0CF5CF00B62C2B /* SWRevealViewController.m in Sources */,
+				EE16F1F91C0CEF6D00B62C2B /* Item.swift in Sources */,
+				EE16F1F81C0CEF6D00B62C2B /* Bidding.swift in Sources */,
 				EE76BEA41C012F8A00780BBE /* ViewController.swift in Sources */,
+				EE16F1FA1C0CEF6D00B62C2B /* Payment.swift in Sources */,
 				0A4002B11C07C4120054774D /* PurchasedTableViewCell.swift in Sources */,
 				EED9F8BB1BFEA64100B1688C /* BidMe.xcdatamodeld in Sources */,
+				EE16F1F71C0CEF6D00B62C2B /* Auction.swift in Sources */,
 				0A4002AF1C07C4120054774D /* OngoingTableViewCell.swift in Sources */,
+				EE16F1FB1C0CEF6D00B62C2B /* User.swift in Sources */,
 				EED9F8B31BFEA64100B1688C /* AppDelegate.swift in Sources */,
-				8CEBFD991C02CA4900E47907 /* SWRevealViewController.m in Sources */,
 				0A4002B01C07C4120054774D /* Product.swift in Sources */,
 				0A4002B21C07C4120054774D /* SoldTableViewCell.swift in Sources */,
 			);
@@ -457,6 +648,7 @@
 		};
 		EED9F8DB1BFEA64100B1688C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7C15B02D9632A480D8F5B02 /* Pods-BidMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -472,6 +664,7 @@
 		};
 		EED9F8DC1BFEA64100B1688C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECBF21F4A6D4F48C623ACF37 /* Pods-BidMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -486,6 +679,7 @@
 		};
 		EED9F8DE1BFEA64100B1688C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81633CD6820BDB67E39E377E /* Pods-BidMeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BidMeTests/Info.plist;
@@ -499,6 +693,7 @@
 		};
 		EED9F8DF1BFEA64100B1688C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABE625729F33E2B9E6786727 /* Pods-BidMeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BidMeTests/Info.plist;
@@ -512,6 +707,7 @@
 		};
 		EED9F8E11BFEA64100B1688C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE36160A747F46FD1514D4AB /* Pods-BidMeUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = BidMeUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -525,6 +721,7 @@
 		};
 		EED9F8E21BFEA64100B1688C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C2E852018E7A0D4267A548B /* Pods-BidMeUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = BidMeUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
