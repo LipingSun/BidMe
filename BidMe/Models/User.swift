@@ -19,11 +19,11 @@ class User: AVUser {
     
     // var email: String!
     
-    // var mobilePhoneNumber: String!
-    
     @NSManaged var firstName: NSString?
     
     @NSManaged var lastName: NSString?
+    
+    @NSManaged var phone: NSString?
     
     @NSManaged var desc: NSString?
     
