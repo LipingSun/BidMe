@@ -25,9 +25,8 @@ class UserTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let user = User()
-        user.username = "abc"
-        user.password = "abc"
-        user.firstName = "ab"
+        user.username = "user1"
+        user.password = "123123"
         user.signUp()
         
     }
