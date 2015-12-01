@@ -28,6 +28,10 @@ class MapViewController: UIViewController {
         
         let sample_auction = Auction()
         //sample_auction.status = "something"
+        let item = Item()
+        item.name = "Xbox"
+        item.desc = "270$"
+        //sample_auction.item = item
         sample_auction.location = AVGeoPoint(latitude: 37.386491, longitude: -121.8842214)
         
         let sample_event = AuctionEvent(auction: sample_auction)
