@@ -24,6 +24,9 @@
 		EE16F1FF1C0CF5CF00B62C2B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE16F1FE1C0CF5CF00B62C2B /* SWRevealViewController.m */; };
 		EE16F2011C0CF9EA00B62C2B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE16F2001C0CF9EA00B62C2B /* RegisterViewController.swift */; };
 		EE16F2031C0D034700B62C2B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE16F2021C0D034700B62C2B /* LoginViewController.swift */; };
+		EE3DBC611C0D5247001E5889 /* AuctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DBC5E1C0D5247001E5889 /* AuctionTests.swift */; };
+		EE3DBC621C0D5247001E5889 /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DBC5F1C0D5247001E5889 /* ItemTests.swift */; };
+		EE3DBC631C0D5247001E5889 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DBC601C0D5247001E5889 /* UserTests.swift */; };
 		EE76BEA01C012F4F00780BBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE76BE9F1C012F4F00780BBE /* Main.storyboard */; };
 		EE76BEA21C012F6A00780BBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE76BEA11C012F6A00780BBE /* LaunchScreen.storyboard */; };
 		EE76BEA41C012F8A00780BBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE76BEA31C012F8A00780BBE /* ViewController.swift */; };
@@ -77,6 +80,9 @@
 		EE16F1FE1C0CF5CF00B62C2B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		EE16F2001C0CF9EA00B62C2B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EE16F2021C0D034700B62C2B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EE3DBC5E1C0D5247001E5889 /* AuctionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionTests.swift; sourceTree = "<group>"; };
+		EE3DBC5F1C0D5247001E5889 /* ItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
+		EE3DBC601C0D5247001E5889 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		EE76BE9F1C012F4F00780BBE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EE76BEA11C012F6A00780BBE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE76BEA31C012F8A00780BBE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +150,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EE3DBC5D1C0D520D001E5889 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE3DBC5E1C0D5247001E5889 /* AuctionTests.swift */,
+				EE3DBC5F1C0D5247001E5889 /* ItemTests.swift */,
+				EE3DBC601C0D5247001E5889 /* UserTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		EED9F8A61BFEA64100B1688C = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +204,7 @@
 		EED9F8C91BFEA64100B1688C /* BidMeTests */ = {
 			isa = PBXGroup;
 			children = (
+				EE3DBC5D1C0D520D001E5889 /* Models */,
 				EED9F8CA1BFEA64100B1688C /* BidMeTests.swift */,
 				EED9F8CC1BFEA64100B1688C /* Info.plist */,
 			);
@@ -543,7 +560,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3DBC631C0D5247001E5889 /* UserTests.swift in Sources */,
 				EED9F8CB1BFEA64100B1688C /* BidMeTests.swift in Sources */,
+				EE3DBC611C0D5247001E5889 /* AuctionTests.swift in Sources */,
+				EE3DBC621C0D5247001E5889 /* ItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
