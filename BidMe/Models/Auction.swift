@@ -8,6 +8,7 @@
 
 import UIKit
 import AVOSCloud
+import MapKit
 
 class Auction: AVObject, AVSubclassing {
     
@@ -28,4 +29,10 @@ class Auction: AVObject, AVSubclassing {
     static func parseClassName() -> String! {
         return "Auction"
     }
+    
+//    internal var coordinate: CLLocationCoordinate2D{
+//        let coord = CLLocationCoordinate2D(latitude: location!.latitude, longitude: location!.latitude)
+//        return coord
+//    }
+    
 }

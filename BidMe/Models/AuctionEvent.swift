@@ -29,6 +29,21 @@ class AuctionEvent: NSObject, MKAnnotation{
         super.init()
     }
     
+    init(auction: Auction) {
+        
+        if let status = auction.status {
+            self.title = String(status)
+        }else{
+            self.title = "anything"
+        }
+        
+        self.locationName = "location"
+        self.category = String(auction.status)
+        self.coordinate = CLLocationCoordinate2D(latitude: auction.location!.latitude, longitude: auction.location!.longitude)
+        
+        super.init()
+    }
+    
     var subtitle: String? {
         return locationName
     }
