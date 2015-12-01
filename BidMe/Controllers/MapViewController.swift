@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import AVOSCloud
 
 class MapViewController: UIViewController {
     
@@ -20,10 +21,16 @@ class MapViewController: UIViewController {
         centerMapOnLocation(initialLocation)
         
         BidMapView.delegate = self
-        let sample_event = AuctionEvent(title: "Xbox One",
-            locationName: "Pacific Rim Plaza",
-            category: "Game",
-            coordinate: CLLocationCoordinate2D(latitude: 37.386491, longitude: -121.8842214))
+//        let sample_event = AuctionEvent(title: "Xbox One",
+//            locationName: "Pacific Rim Plaza",
+//            category: "Game",
+//            coordinate: CLLocationCoordinate2D(latitude: 37.386491, longitude: -121.8842214))
+        
+        let sample_auction = Auction()
+        //sample_auction.status = "something"
+        sample_auction.location = AVGeoPoint(latitude: 37.386491, longitude: -121.8842214)
+        
+        let sample_event = AuctionEvent(auction: sample_auction)
         
         BidMapView.addAnnotation(sample_event)
     }
