@@ -26,11 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Payment.registerSubclass()
         
         // US Network Node
-        AVOSCloud.useAVCloudUS()
-        AVOSCloud.setApplicationId("tH1AMIWd6vHGSLO5Jn5EaBC7", clientKey: "TC1mHol4exEP8InB59m0u8ct")
+//        AVOSCloud.useAVCloudUS()
+//        AVOSCloud.setApplicationId("tH1AMIWd6vHGSLO5Jn5EaBC7", clientKey: "TC1mHol4exEP8InB59m0u8ct")
         
         // China Network Node
-        // AVOSCloud.setApplicationId("b54PwMN1H6mnJTFmMlFQyHql", clientKey: "zDRARxxTnR2lqsGqTM83phxe")
+        AVOSCloud.setApplicationId("b54PwMN1H6mnJTFmMlFQyHql", clientKey: "zDRARxxTnR2lqsGqTM83phxe")
         
         AVOSCloud.setAllLogsEnabled(true)
         
