@@ -62,6 +62,17 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
             
             break
             
+        case 2:
+            let mapStoryboard: UIStoryboard = UIStoryboard(name: "Map", bundle: nil)
+            var mapViewController = mapStoryboard.instantiateViewControllerWithIdentifier("MapViewController") as! MapViewController
+            var mapNavController = UINavigationController(rootViewController: mapViewController)
+            var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            
+            appDelegate.centerContainer!.centerViewController = mapNavController
+            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+            
+            break
+            
         default:
             print("\(menuItems[indexPath.row]) is selected")
         }

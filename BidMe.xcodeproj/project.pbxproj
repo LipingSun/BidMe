@@ -40,6 +40,8 @@
 		EED6FD811C1001E8008D85D4 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD7C1C1001E8008D85D4 /* MMDrawerController.m */; };
 		EED6FD821C1001E8008D85D4 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD7F1C1001E8008D85D4 /* MMDrawerVisualState.m */; };
 		EED6FD851C1001ED008D85D4 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD841C1001ED008D85D4 /* UIViewController+MMDrawerController.m */; };
+		EED6FD8D1C1009C9008D85D4 /* Auction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED6FD8C1C1009C9008D85D4 /* Auction.storyboard */; };
+		EED6FD8F1C1009D0008D85D4 /* AuctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD8E1C1009D0008D85D4 /* AuctionViewController.swift */; };
 		EED9F8B31BFEA64100B1688C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED9F8B21BFEA64100B1688C /* AppDelegate.swift */; };
 		EED9F8BB1BFEA64100B1688C /* BidMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EED9F8B91BFEA64100B1688C /* BidMe.xcdatamodeld */; };
 		EED9F8BD1BFEA64100B1688C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED9F8BC1BFEA64100B1688C /* Assets.xcassets */; };
@@ -111,6 +113,8 @@
 		EED6FD7F1C1001E8008D85D4 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
 		EED6FD831C1001ED008D85D4 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
 		EED6FD841C1001ED008D85D4 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		EED6FD8C1C1009C9008D85D4 /* Auction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auction.storyboard; sourceTree = "<group>"; };
+		EED6FD8E1C1009D0008D85D4 /* AuctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionViewController.swift; sourceTree = "<group>"; };
 		EED9F8AF1BFEA64100B1688C /* BidMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BidMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED9F8B21BFEA64100B1688C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EED9F8BA1BFEA64100B1688C /* BidMe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BidMe.xcdatamodel; sourceTree = "<group>"; };
@@ -276,6 +280,7 @@
 		EED9F8E41BFEA88D00B1688C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EED6FD8E1C1009D0008D85D4 /* AuctionViewController.swift */,
 				EED6FD611C0FFE05008D85D4 /* LeftSideViewController.swift */,
 				EED6FD5F1C0FFDCE008D85D4 /* CenterViewController.swift */,
 				EED6FD631C0FFE43008D85D4 /* AccountViewController.swift */,
@@ -289,6 +294,7 @@
 		EED9F8E51BFEA8DD00B1688C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EED6FD8C1C1009C9008D85D4 /* Auction.storyboard */,
 				0A4002A91C07C4120054774D /* History.storyboard */,
 				0A4002AA1C07C4120054774D /* OngoingTableViewCell.swift */,
 				0A4002AB1C07C4120054774D /* Product.swift */,
@@ -436,6 +442,7 @@
 			files = (
 				EE76BEA21C012F6A00780BBE /* LaunchScreen.storyboard in Resources */,
 				0A4002B41C07C47C0054774D /* Account.storyboard in Resources */,
+				EED6FD8D1C1009C9008D85D4 /* Auction.storyboard in Resources */,
 				0A4002AE1C07C4120054774D /* History.storyboard in Resources */,
 				EED6FD5E1C0FFD9D008D85D4 /* Center.storyboard in Resources */,
 				EED9F8BD1BFEA64100B1688C /* Assets.xcassets in Resources */,
@@ -611,6 +618,7 @@
 				99A4263E1C0D9D51001D7909 /* AuctionEvent.swift in Sources */,
 				EED9F8B31BFEA64100B1688C /* AppDelegate.swift in Sources */,
 				0A4002B01C07C4120054774D /* Product.swift in Sources */,
+				EED6FD8F1C1009D0008D85D4 /* AuctionViewController.swift in Sources */,
 				0A4002B21C07C4120054774D /* SoldTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

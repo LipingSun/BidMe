@@ -8,28 +8,32 @@
 
 import UIKit
 
-class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class AuctionViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     @IBOutlet weak var imgView: UIImageView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //add gesture recognizer on image view
+        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:Selector("imageTapped:"))
+        imgView.userInteractionEnabled = true
+        imgView.addGestureRecognizer(tapGestureRecognizer)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func getBtn(sender: AnyObject) {
-        
+    func imageTapped(img: AnyObject)
+    {
         let image = UIImagePickerController()
         image.delegate = self
         image.sourceType=UIImagePickerControllerSourceType.PhotoLibrary
         self.presentViewController(image,animated: true, completion:nil)
-        
-        
     }
+    
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         let theInfo:NSDictionary=info as NSDictionary

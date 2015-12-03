@@ -4,6 +4,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
+        <!--Auction-->
+        <scene sceneID="szJ-OM-mjK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Auction" id="535-31-my7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u82-LD-P5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="961.5" y="326"/>
+        </scene>
         <!--BidMe-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -63,12 +71,17 @@
                                 <action selector="leftSideMenuTapped:" destination="BYZ-38-t0r" id="jIO-vE-bdk"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1nS-vs-KtE">
+                            <connections>
+                                <segue destination="535-31-my7" kind="show" id="Jvl-fC-AH5"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="774.5" y="1050.5"/>
+            <point key="canvasLocation" x="726.5" y="1050.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="CcF-MS-JsD">
@@ -81,6 +94,13 @@
                     <view key="view" contentMode="scaleToFill" id="piG-J0-Ezw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mal-To-p4T">
+                                <rect key="frame" x="175" y="565" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Bid"/>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
