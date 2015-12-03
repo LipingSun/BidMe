@@ -33,7 +33,7 @@ class LoginViewController: UIViewController {
     @IBAction func loginButtonPressed(sender: AnyObject) {
         let centerStoryboard: UIStoryboard = UIStoryboard(name: "Center", bundle: nil)
         let centerViewController = centerStoryboard.instantiateViewControllerWithIdentifier("PGTopViewController")
-        self.presentViewController(centerViewController, animated: true, completion: nil)
+        self.showViewController(centerViewController, sender: self)
         
 //        AVUser.logInWithUsernameInBackground(userName.text, password: password.text, block: {(user: AVUser?, error: NSError?) in
 //            if let user = user {
