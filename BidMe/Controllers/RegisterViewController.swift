@@ -43,12 +43,16 @@ class RegisterViewController: UIViewController {
         user.signUpInBackgroundWithBlock({(succeeded: Bool, error: NSError?) in
             if let error = error {
                 print(error)
+                let alertController = UIAlertController(title: "Register Failed", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default, handler: nil))
+                self.showViewController(alertController, sender: self)
             } else {
                 print("register success!")
+                let centerStoryboard: UIStoryboard = UIStoryboard(name: "Center", bundle: nil)
+                let centerViewController = centerStoryboard.instantiateViewControllerWithIdentifier("PGTopViewController")
+                self.showViewController(centerViewController, sender: self)
             }
         })
-
-
     }
 
     /*

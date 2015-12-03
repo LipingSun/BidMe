@@ -31,18 +31,19 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonPressed(sender: AnyObject) {
-        let centerStoryboard: UIStoryboard = UIStoryboard(name: "Center", bundle: nil)
-        let centerViewController = centerStoryboard.instantiateViewControllerWithIdentifier("PGTopViewController")
-        self.showViewController(centerViewController, sender: self)
-        
-//        AVUser.logInWithUsernameInBackground(userName.text, password: password.text, block: {(user: AVUser?, error: NSError?) in
-//            if let user = user {
-//                print("login success!")
-//                
-//            } else {
-//                print(error)
-//            }
-//        })
+        AVUser.logInWithUsernameInBackground(userName.text, password: password.text, block: {(user: AVUser?, error: NSError?) in
+            if let user = user {
+                print("login success!")
+                let centerStoryboard: UIStoryboard = UIStoryboard(name: "Center", bundle: nil)
+                let centerViewController = centerStoryboard.instantiateViewControllerWithIdentifier("PGTopViewController")
+                self.showViewController(centerViewController, sender: self)
+            } else {
+                print(error)
+                let alertController = UIAlertController(title: "Login Failed", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default, handler: nil))
+                self.showViewController(alertController, sender: self)
+            }
+        })
     }
 
     /*
