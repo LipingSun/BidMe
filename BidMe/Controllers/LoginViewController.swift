@@ -31,13 +31,18 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonPressed(sender: AnyObject) {
-        AVUser.logInWithUsernameInBackground(userName.text, password: password.text, block: {(user: AVUser?, error: NSError?) in
-            if let user = user {
-                print("login success!")
-            } else {
-                print(error)
-            }
-        })
+        let centerStoryboard: UIStoryboard = UIStoryboard(name: "Center", bundle: nil)
+        let centerViewController = centerStoryboard.instantiateViewControllerWithIdentifier("PGTopViewController")
+        self.presentViewController(centerViewController, animated: true, completion: nil)
+        
+//        AVUser.logInWithUsernameInBackground(userName.text, password: password.text, block: {(user: AVUser?, error: NSError?) in
+//            if let user = user {
+//                print("login success!")
+//                
+//            } else {
+//                print(error)
+//            }
+//        })
     }
 
     /*
