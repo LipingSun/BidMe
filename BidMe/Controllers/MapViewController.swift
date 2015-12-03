@@ -16,20 +16,14 @@ class MapViewController: UIViewController,MKMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
-
         setupLeftMenuButton()
         
         BidMapView.delegate = self
         
         let initialLocation = CLLocation(latitude: 37.3883809, longitude:-121.8834904)
         centerMapOnLocation(initialLocation)
-        
-        
-//        let sample_event = AuctionEvent(title: "Xbox One",
-//            locationName: "Pacific Rim Plaza",
-//            category: "Game",
-//            coordinate: CLLocationCoordinate2D(latitude: 37.386491, longitude: -121.8842214))
         
         let sample_auction = Auction()
         
@@ -40,6 +34,7 @@ class MapViewController: UIViewController,MKMapViewDelegate {
         sample_auction.location = AVGeoPoint(latitude: 37.386491, longitude: -121.8842214)
         
         let sample_event = AuctionEvent(auction: sample_auction)
+        sample_event.assignImage(UIImage(named: "moto")!)
         
         BidMapView.addAnnotation(sample_event)
     }
@@ -52,25 +47,28 @@ class MapViewController: UIViewController,MKMapViewDelegate {
         BidMapView.setRegion(coordinateRegion, animated: true)
     }
     
-    func MapView(mapView: MKMapView!,
-        viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
-            if (annotation is MKUserLocation) { return nil }
-            
-            let reuseID = "chest"
-            var v = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseID)
-            
-            if v != nil {
-                v?.annotation = annotation
+    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+        if let annotation = annotation as? AuctionEvent {
+            let identifier = "pin"
+            var view: MKAnnotationView
+            if let dequeuedView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier)
+                as? MKPinAnnotationView { // 2
+                    dequeuedView.annotation = annotation
+                    view = dequeuedView
             } else {
-                v = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseID)
+                // 3
+                view = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                view.canShowCallout = true
+                view.calloutOffset = CGPoint(x: -5, y: 5)
+                //view.rightCalloutAccessoryView = UIButton.buttonWithType(.DetailDisclosure)
             }
-            v!.image = UIImage(named: "dril")
-//            let annotationview = MKAnnotationView(annotation: annotation, reuseIdentifier: "new")
-//            print("Here")
-//            annotationview.image = UIImage(named: "moto")
-//            annotationview.highlighted = true
-//
-            return v
+            print("here B")
+            if let img = annotation.image {
+                view.image=img
+            }
+            return view
+        }
+        return nil
     }
     
     func setupLeftMenuButton() {
