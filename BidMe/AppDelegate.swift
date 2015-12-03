@@ -14,6 +14,8 @@ import AVOSCloud
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var centerContainer: MMDrawerController?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -33,6 +35,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AVOSCloud.setApplicationId("b54PwMN1H6mnJTFmMlFQyHql", clientKey: "zDRARxxTnR2lqsGqTM83phxe")
         
         AVOSCloud.setAllLogsEnabled(true)
+        
+        // Center Control
+        var rootViewController = self.window!.rootViewController
+        
+        let centerStoryboard: UIStoryboard = UIStoryboard(name: "Center", bundle: nil)
+        
+        var centerViewController = centerStoryboard.instantiateViewControllerWithIdentifier("CenterViewController") as! CenterViewController
+        
+        var leftViewController = centerStoryboard.instantiateViewControllerWithIdentifier("LeftSideViewController") as!LeftSideViewController
+        
+        var leftSideNav = UINavigationController(rootViewController: leftViewController)
+        
+        var centerNav = UINavigationController(rootViewController: centerViewController)
+        
+        centerContainer = MMDrawerController(centerViewController: centerNav, leftDrawerViewController: leftSideNav)
+        
+        centerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.PanningCenterView
+        centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningCenterView
+        
+        window!.rootViewController = centerContainer
+        window!.makeKeyAndVisible()
         
         return true
     }

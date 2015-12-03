@@ -66,6 +66,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="loginButtonPressed:" destination="llu-YR-sbp" eventType="touchUpInside" id="WzV-Qf-UfB"/>
+                                            <segue destination="stp-py-cXn" kind="show" id="Rjf-dY-hup"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -110,6 +111,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gn8-cT-akY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="845.5" y="201.5"/>
+        </scene>
+        <!--Center-->
+        <scene sceneID="O6N-Lb-9vP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Center" id="stp-py-cXn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i2r-kR-BFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="845.5" y="652"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="9Nt-Ml-eDe">

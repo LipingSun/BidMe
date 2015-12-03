@@ -31,6 +31,15 @@
 		EE3DBC621C0D5247001E5889 /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DBC5F1C0D5247001E5889 /* ItemTests.swift */; };
 		EE3DBC631C0D5247001E5889 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DBC601C0D5247001E5889 /* UserTests.swift */; };
 		EE76BEA21C012F6A00780BBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE76BEA11C012F6A00780BBE /* LaunchScreen.storyboard */; };
+		EED6FD5E1C0FFD9D008D85D4 /* Center.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED6FD5D1C0FFD9D008D85D4 /* Center.storyboard */; };
+		EED6FD601C0FFDCE008D85D4 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD5F1C0FFDCE008D85D4 /* CenterViewController.swift */; };
+		EED6FD621C0FFE05008D85D4 /* LeftSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD611C0FFE05008D85D4 /* LeftSideViewController.swift */; };
+		EED6FD641C0FFE43008D85D4 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD631C0FFE43008D85D4 /* AccountViewController.swift */; };
+		EED6FD751C0FFFEF008D85D4 /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD741C0FFFEF008D85D4 /* MyCustomTableViewCell.swift */; };
+		EED6FD801C1001E8008D85D4 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD7A1C1001E8008D85D4 /* MMDrawerBarButtonItem.m */; };
+		EED6FD811C1001E8008D85D4 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD7C1C1001E8008D85D4 /* MMDrawerController.m */; };
+		EED6FD821C1001E8008D85D4 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD7F1C1001E8008D85D4 /* MMDrawerVisualState.m */; };
+		EED6FD851C1001ED008D85D4 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD841C1001ED008D85D4 /* UIViewController+MMDrawerController.m */; };
 		EED9F8B31BFEA64100B1688C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED9F8B21BFEA64100B1688C /* AppDelegate.swift */; };
 		EED9F8BB1BFEA64100B1688C /* BidMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EED9F8B91BFEA64100B1688C /* BidMe.xcdatamodeld */; };
 		EED9F8BD1BFEA64100B1688C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED9F8BC1BFEA64100B1688C /* Assets.xcassets */; };
@@ -79,7 +88,7 @@
 		EE16F1F41C0CEF6D00B62C2B /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EE16F1F51C0CEF6D00B62C2B /* Payment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		EE16F1F61C0CEF6D00B62C2B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		EE16F1FC1C0CF5AB00B62C2B /* BidMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BidMe-Bridging-Header.h"; sourceTree = "<group>"; };
+		EE16F1FC1C0CF5AB00B62C2B /* BidMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BidMe-Bridging-Header.h"; path = "../BidMe-Bridging-Header.h"; sourceTree = "<group>"; };
 		EE16F1FD1C0CF5C900B62C2B /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		EE16F1FE1C0CF5CF00B62C2B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		EE16F2001C0CF9EA00B62C2B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +97,20 @@
 		EE3DBC5F1C0D5247001E5889 /* ItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
 		EE3DBC601C0D5247001E5889 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		EE76BEA11C012F6A00780BBE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EED6FD5D1C0FFD9D008D85D4 /* Center.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Center.storyboard; sourceTree = "<group>"; };
+		EED6FD5F1C0FFDCE008D85D4 /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
+		EED6FD611C0FFE05008D85D4 /* LeftSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideViewController.swift; sourceTree = "<group>"; };
+		EED6FD631C0FFE43008D85D4 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		EED6FD741C0FFFEF008D85D4 /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
+		EED6FD791C1001E8008D85D4 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		EED6FD7A1C1001E8008D85D4 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		EED6FD7B1C1001E8008D85D4 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		EED6FD7C1C1001E8008D85D4 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		EED6FD7D1C1001E8008D85D4 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		EED6FD7E1C1001E8008D85D4 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		EED6FD7F1C1001E8008D85D4 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		EED6FD831C1001ED008D85D4 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		EED6FD841C1001ED008D85D4 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		EED9F8AF1BFEA64100B1688C /* BidMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BidMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED9F8B21BFEA64100B1688C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EED9F8BA1BFEA64100B1688C /* BidMe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BidMe.xcdatamodel; sourceTree = "<group>"; };
@@ -162,6 +185,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		EED6FD661C0FFF57008D85D4 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				EED6FD791C1001E8008D85D4 /* MMDrawerBarButtonItem.h */,
+				EED6FD7A1C1001E8008D85D4 /* MMDrawerBarButtonItem.m */,
+				EED6FD7B1C1001E8008D85D4 /* MMDrawerController.h */,
+				EED6FD7C1C1001E8008D85D4 /* MMDrawerController.m */,
+				EED6FD7D1C1001E8008D85D4 /* MMDrawerController+Subclass.h */,
+				EED6FD7E1C1001E8008D85D4 /* MMDrawerVisualState.h */,
+				EED6FD7F1C1001E8008D85D4 /* MMDrawerVisualState.m */,
+				EED6FD831C1001ED008D85D4 /* UIViewController+MMDrawerController.h */,
+				EED6FD841C1001ED008D85D4 /* UIViewController+MMDrawerController.m */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
 		EED9F8A61BFEA64100B1688C = {
 			isa = PBXGroup;
 			children = (
@@ -195,7 +234,6 @@
 				EED9F8B21BFEA64100B1688C /* AppDelegate.swift */,
 				EED9F8BC1BFEA64100B1688C /* Assets.xcassets */,
 				EED9F8C11BFEA64100B1688C /* Info.plist */,
-				EE16F1FC1C0CF5AB00B62C2B /* BidMe-Bridging-Header.h */,
 				EE16F1FD1C0CF5C900B62C2B /* SWRevealViewController.h */,
 				EE16F1FE1C0CF5CF00B62C2B /* SWRevealViewController.m */,
 				EED9F8B91BFEA64100B1688C /* BidMe.xcdatamodeld */,
@@ -238,6 +276,9 @@
 		EED9F8E41BFEA88D00B1688C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EED6FD611C0FFE05008D85D4 /* LeftSideViewController.swift */,
+				EED6FD5F1C0FFDCE008D85D4 /* CenterViewController.swift */,
+				EED6FD631C0FFE43008D85D4 /* AccountViewController.swift */,
 				EE16F2001C0CF9EA00B62C2B /* RegisterViewController.swift */,
 				EE16F2021C0D034700B62C2B /* LoginViewController.swift */,
 				99A4263B1C0D3E04001D7909 /* MapViewController.swift */,
@@ -252,7 +293,9 @@
 				0A4002AA1C07C4120054774D /* OngoingTableViewCell.swift */,
 				0A4002AB1C07C4120054774D /* Product.swift */,
 				0A4002AC1C07C4120054774D /* PurchasedTableViewCell.swift */,
+				EED6FD741C0FFFEF008D85D4 /* MyCustomTableViewCell.swift */,
 				0A4002AD1C07C4120054774D /* SoldTableViewCell.swift */,
+				EED6FD5D1C0FFD9D008D85D4 /* Center.storyboard */,
 				EE76BEA11C012F6A00780BBE /* LaunchScreen.storyboard */,
 				0A4002B31C07C47C0054774D /* Account.storyboard */,
 				99A426391C0D3CDB001D7909 /* Map.storyboard */,
@@ -270,6 +313,8 @@
 		EED9F8E71BFEA96000B1688C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				EE16F1FC1C0CF5AB00B62C2B /* BidMe-Bridging-Header.h */,
+				EED6FD661C0FFF57008D85D4 /* SideMenu */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -392,6 +437,7 @@
 				EE76BEA21C012F6A00780BBE /* LaunchScreen.storyboard in Resources */,
 				0A4002B41C07C47C0054774D /* Account.storyboard in Resources */,
 				0A4002AE1C07C4120054774D /* History.storyboard in Resources */,
+				EED6FD5E1C0FFD9D008D85D4 /* Center.storyboard in Resources */,
 				EED9F8BD1BFEA64100B1688C /* Assets.xcassets in Resources */,
 				99A4263A1C0D3CDB001D7909 /* Map.storyboard in Resources */,
 			);
@@ -544,13 +590,21 @@
 				EE16F1FF1C0CF5CF00B62C2B /* SWRevealViewController.m in Sources */,
 				EE16F1F91C0CEF6D00B62C2B /* Item.swift in Sources */,
 				EE16F1F81C0CEF6D00B62C2B /* Bidding.swift in Sources */,
+				EED6FD801C1001E8008D85D4 /* MMDrawerBarButtonItem.m in Sources */,
+				EED6FD811C1001E8008D85D4 /* MMDrawerController.m in Sources */,
+				EED6FD601C0FFDCE008D85D4 /* CenterViewController.swift in Sources */,
 				EE16F2031C0D034700B62C2B /* LoginViewController.swift in Sources */,
 				EE16F1FA1C0CEF6D00B62C2B /* Payment.swift in Sources */,
+				EED6FD641C0FFE43008D85D4 /* AccountViewController.swift in Sources */,
 				0A4002B11C07C4120054774D /* PurchasedTableViewCell.swift in Sources */,
 				EED9F8BB1BFEA64100B1688C /* BidMe.xcdatamodeld in Sources */,
+				EED6FD751C0FFFEF008D85D4 /* MyCustomTableViewCell.swift in Sources */,
+				EED6FD821C1001E8008D85D4 /* MMDrawerVisualState.m in Sources */,
+				EED6FD851C1001ED008D85D4 /* UIViewController+MMDrawerController.m in Sources */,
 				EE16F1F71C0CEF6D00B62C2B /* Auction.swift in Sources */,
 				0A4002AF1C07C4120054774D /* OngoingTableViewCell.swift in Sources */,
 				EE16F2011C0CF9EA00B62C2B /* RegisterViewController.swift in Sources */,
+				EED6FD621C0FFE05008D85D4 /* LeftSideViewController.swift in Sources */,
 				EE16F1FB1C0CEF6D00B62C2B /* User.swift in Sources */,
 				99A4263C1C0D3E04001D7909 /* MapViewController.swift in Sources */,
 				EED9F8BB1BFEA64100B1688C /* BidMe.xcdatamodeld in Sources */,
