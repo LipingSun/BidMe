@@ -66,7 +66,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="loginButtonPressed:" destination="llu-YR-sbp" eventType="touchUpInside" id="WzV-Qf-UfB"/>
-                                            <segue destination="stp-py-cXn" kind="show" id="Rjf-dY-hup"/>
+                                            <segue destination="stp-py-cXn" kind="show" identifier="DrawerSegue" id="Rjf-dY-hup"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -87,7 +87,7 @@
                                 <animations/>
                                 <state key="normal" title="Register"/>
                                 <connections>
-                                    <segue destination="Qqt-LV-Rlo" kind="presentation" id="EN3-nL-7Jw"/>
+                                    <segue destination="Qqt-LV-Rlo" kind="show" id="EN3-nL-7Jw"/>
                                 </connections>
                             </button>
                         </subviews>

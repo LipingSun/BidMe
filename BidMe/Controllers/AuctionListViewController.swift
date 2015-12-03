@@ -24,8 +24,7 @@ class CenterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
 
     @IBAction func leftSideMenuTapped(sender: AnyObject) {
-        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        appDelegate.centerContainer?.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+        self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

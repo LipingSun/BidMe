@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0Xn-TZ-YyH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fa6-Ck-E93">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
@@ -10,12 +10,12 @@
                 <viewControllerPlaceholder storyboardName="Auction" id="535-31-my7" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u82-LD-P5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1185.5" y="686"/>
+            <point key="canvasLocation" x="1703.5" y="476"/>
         </scene>
         <!--BidMe-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="CenterViewController" id="BYZ-38-t0r" customClass="CenterViewController" customModule="BidMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CenterViewController" customModule="BidMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -81,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726.5" y="1050.5"/>
+            <point key="canvasLocation" x="1092.5" y="980.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="CcF-MS-JsD">
@@ -112,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bmu-4c-qKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1321.5" y="1295.5"/>
+            <point key="canvasLocation" x="1791.5" y="1205.5"/>
         </scene>
         <!--Paypal-->
         <scene sceneID="oxf-Qr-USj">
@@ -120,7 +120,7 @@
                 <viewControllerPlaceholder storyboardName="Paypal" id="ZzQ-2v-kA6" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fX-bo-Cce" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1321.5" y="1809"/>
+            <point key="canvasLocation" x="2207.5" y="1963"/>
         </scene>
         <!--Left Side View Controller-->
         <scene sceneID="wSy-da-xvB">
@@ -187,12 +187,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqk-Tv-h6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-235.5" y="1049.5"/>
+            <point key="canvasLocation" x="1092.5" y="131.5"/>
         </scene>
         <!--Account View Controller-->
         <scene sceneID="6uk-WN-qh5">
             <objects>
-                <viewController storyboardIdentifier="AccountViewController" id="3sF-iR-nc1" customClass="AccountViewController" customModule="BidMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3sF-iR-nc1" customClass="AccountViewController" customModule="BidMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rUg-xw-XyQ"/>
                         <viewControllerLayoutGuide type="bottom" id="68i-RG-Nah"/>
@@ -223,12 +223,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="noP-DW-ZII" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="470.5" y="1936.5"/>
+            <point key="canvasLocation" x="1092.5" y="1810.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aZ1-15-fvd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0Xn-TZ-YyH" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="AuctionListTopViewController" automaticallyAdjustsScrollViewInsets="NO" id="0Xn-TZ-YyH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3rr-5K-XjB">
@@ -243,12 +243,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ez-ea-irx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="1051"/>
+            <point key="canvasLocation" x="626.5" y="980.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qgg-Y0-h9d">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MfW-st-Nof" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="AccountNavViewController" automaticallyAdjustsScrollViewInsets="NO" id="MfW-st-Nof" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Yb-rb-zii">
@@ -263,7 +263,67 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="39n-Jr-tdS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13.5" y="1936.5"/>
+            <point key="canvasLocation" x="626.5" y="1810.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mFx-mZ-JYL">
+            <objects>
+                <viewController id="OMk-b8-t9I" customClass="PGViewController" customModule="BidMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J8F-W3-js4"/>
+                        <viewControllerLayoutGuide type="bottom" id="H4e-SY-p9I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kNo-Sr-qQ2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6fK-BT-Fuc"/>
+                    <connections>
+                        <segue destination="7b4-QP-Icz" kind="modal" identifier="DrawerSegue" animates="NO" id="Uv5-p5-J0Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nqB-nY-788" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126.5" y="131.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F2h-M5-d4A">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="fa6-Ck-E93" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KRE-Uv-4eZ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OMk-b8-t9I" kind="relationship" relationship="rootViewController" id="u1Y-ms-y75"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wtT-z5-eDX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394" y="132"/>
+        </scene>
+        <!--Drawer Controller-->
+        <scene sceneID="xdf-xY-5vF">
+            <objects>
+                <viewController id="7b4-QP-Icz" customClass="MMDrawerController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="19R-hF-bum"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tpk-O1-Mwz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ufh-DW-iWh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Drawer Controller" id="Zw3-jw-TWs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pgo-TT-awA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="627" y="132"/>
         </scene>
     </scenes>
     <resources>

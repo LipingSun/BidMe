@@ -10,7 +10,9 @@ import UIKit
 
 class LeftSideViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var menuItems:[String] = ["Home", "Account", "MapView", "History"];
+    var menuItems:[String] = ["Home", "Account", "MapView", "History"]
+    
+    var currentIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,58 +25,53 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return menuItems.count
     }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
-    {
-        var mycell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! MyCustomTableViewCell
+
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let mycell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! MyCustomTableViewCell
         
         mycell.menuItemLabel.text = menuItems[indexPath.row]
         
         return mycell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
-    {
-        switch(indexPath.row)
-        {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if (self.currentIndex == indexPath.row) {
+            self.mm_drawerController.closeDrawerAnimated(true, completion: nil)
+            return
+        }
+        
+        var centerViewController:CenterViewController?
+        switch(indexPath.row) {
         
         case 0:
-            var centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("CenterViewController") as! CenterViewController
-            var centerNavController = UINavigationController(rootViewController: centerViewController)
-            var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            
-            appDelegate.centerContainer!.centerViewController = centerNavController
-            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
-            
+            centerViewController = self.storyboard!.instantiateViewControllerWithIdentifier("AuctionListTopViewController") as? CenterViewController
             break
-            
         case 1:
-            var centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("AccountViewController") as! AccountViewController
-            var centerNavController = UINavigationController(rootViewController: centerViewController)
-            var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            
-            appDelegate.centerContainer!.centerViewController = centerNavController
-            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
-            
             break
             
         case 2:
-            let mapStoryboard: UIStoryboard = UIStoryboard(name: "Map", bundle: nil)
-            var mapViewController = mapStoryboard.instantiateViewControllerWithIdentifier("MapViewController") as! MapViewController
-            var mapNavController = UINavigationController(rootViewController: mapViewController)
-            var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            
-            appDelegate.centerContainer!.centerViewController = mapNavController
-            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+//            let mapStoryboard: UIStoryboard = UIStoryboard(name: "Map", bundle: nil)
+//            var mapViewController = mapStoryboard.instantiateViewControllerWithIdentifier("MapViewController") as! MapViewController
+//            var mapNavController = UINavigationController(rootViewController: mapViewController)
+//            var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+//            
+//            appDelegate.centerContainer!.centerViewController = mapNavController
+//            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
             
             break
             
         default:
             print("\(menuItems[indexPath.row]) is selected")
+        }
+        
+        if let centerViewController = centerViewController {
+            self.currentIndex = indexPath.row
+            self.mm_drawerController.setCenterViewController(centerViewController, withCloseAnimation: true, completion: nil)
+        } else {
+            self.mm_drawerController.closeDrawerAnimated(true, completion: nil)
         }
     }
     /*

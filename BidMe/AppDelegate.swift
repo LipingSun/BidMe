@@ -39,27 +39,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Paypal
         PayPalMobile.initializeWithClientIdsForEnvironments([PayPalEnvironmentSandbox:"Acg02hRXEnf5_NGSQhPRHz4QDlBmZiknTO5FJVLOhlZE0Wct-BsG9xXxNZIKbaHDnH8riqp8mn7qkX5g"])
         
-        // Center Control
-        var rootViewController = self.window!.rootViewController
-        
-        let centerStoryboard: UIStoryboard = UIStoryboard(name: "Center", bundle: nil)
-        
-        var centerViewController = centerStoryboard.instantiateViewControllerWithIdentifier("CenterViewController") as! CenterViewController
-        
-        var leftViewController = centerStoryboard.instantiateViewControllerWithIdentifier("LeftSideViewController") as!LeftSideViewController
-        
-        var leftSideNav = UINavigationController(rootViewController: leftViewController)
-        
-        var centerNav = UINavigationController(rootViewController: centerViewController)
-        
-        centerContainer = MMDrawerController(centerViewController: centerNav, leftDrawerViewController: leftSideNav)
-        
-        centerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.PanningCenterView
-        centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningCenterView
-        
-        window!.rootViewController = centerContainer
-        window!.makeKeyAndVisible()
-        
         return true
     }
 
