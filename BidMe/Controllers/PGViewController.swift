@@ -28,6 +28,10 @@ class PGViewController: UIViewController {
             // Instantiate and set the left drawer controller.
             let leftViewController = self.storyboard!.instantiateViewControllerWithIdentifier("LeftSideViewController")
             destinationViewController.leftDrawerViewController = leftViewController
+            
+            // Instantiate and set gestures for left drawer
+            destinationViewController.openDrawerGestureModeMask = MMOpenDrawerGestureMode.PanningCenterView
+            destinationViewController.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningCenterView
         }
     }
 
