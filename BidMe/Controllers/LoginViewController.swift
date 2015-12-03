@@ -27,6 +27,9 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func backButtonPressed(unwindSegue: UIStoryboardSegue) {
+    }
+    
     @IBAction func loginButtonPressed(sender: AnyObject) {
         AVUser.logInWithUsernameInBackground(userName.text, password: password.text, block: {(user: AVUser?, error: NSError?) in
             if let user = user {
