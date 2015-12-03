@@ -10,7 +10,7 @@
                 <viewControllerPlaceholder storyboardName="Auction" id="535-31-my7" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u82-LD-P5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="961.5" y="326"/>
+            <point key="canvasLocation" x="1185.5" y="686"/>
         </scene>
         <!--BidMe-->
         <scene sceneID="tne-QT-ifu">
@@ -99,6 +99,9 @@
                                 <rect key="frame" x="175" y="565" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Bid"/>
+                                <connections>
+                                    <segue destination="ZzQ-2v-kA6" kind="show" id="ywX-RQ-BEu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -109,7 +112,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bmu-4c-qKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="774.5" y="1827.5"/>
+            <point key="canvasLocation" x="1321.5" y="1295.5"/>
+        </scene>
+        <!--Paypal-->
+        <scene sceneID="oxf-Qr-USj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Paypal" id="ZzQ-2v-kA6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1fX-bo-Cce" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1321.5" y="1809"/>
         </scene>
         <!--Left Side View Controller-->
         <scene sceneID="wSy-da-xvB">
@@ -176,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqk-Tv-h6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1200.5" y="1050.5"/>
+            <point key="canvasLocation" x="-235.5" y="1049.5"/>
         </scene>
         <!--Account View Controller-->
         <scene sceneID="6uk-WN-qh5">
@@ -212,7 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="noP-DW-ZII" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2032.5" y="1049.5"/>
+            <point key="canvasLocation" x="470.5" y="1936.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aZ1-15-fvd">
@@ -252,10 +263,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="39n-Jr-tdS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1622" y="1050"/>
+            <point key="canvasLocation" x="13.5" y="1936.5"/>
         </scene>
     </scenes>
     <resources>
-        <image name="bid.png" width="249" height="202"/>
+        <image name="bid.png" width="30" height="30"/>
     </resources>
 </document>

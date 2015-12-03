@@ -16,33 +16,52 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08D8BE92D216E9E4DC013C9AE9EF7289 /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOCreditCardInfo.h; path = CardIO/CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		0B83ED84D9EEB89778214E961A5A0650 /* PayPalOAuthScopes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalOAuthScopes.h; path = PayPalMobile/PayPalOAuthScopes.h; sourceTree = "<group>"; };
 		0F64726AF315615206126CC0AB45E9EC /* Pods-BidMe-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BidMe-frameworks.sh"; sourceTree = "<group>"; };
 		101170EF5A8BF3B98F0B70536BCE29CB /* Pods-BidMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BidMeTests.release.xcconfig"; sourceTree = "<group>"; };
+		111FA3E393DDDB2DE3FA191C6C8D3626 /* CardIOView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOView.h; path = CardIO/CardIOView.h; sourceTree = "<group>"; };
 		114FBD3771F074ED4BFDC208F65C64A0 /* Pods-BidMeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BidMeTests-resources.sh"; sourceTree = "<group>"; };
 		1AD8F8E2292F0FB0CA1F22649793D855 /* Pods-BidMeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BidMeTests-frameworks.sh"; sourceTree = "<group>"; };
+		2929D731E0EC3C534510E75B9882FDE7 /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOPaymentViewControllerDelegate.h; path = CardIO/CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
 		29B030967ADE912782809B12954CDAFE /* Pods-BidMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BidMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		29C85F57A672BD59838EAABB8BEE0DD3 /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalPaymentViewController.h; path = PayPalMobile/PayPalPaymentViewController.h; sourceTree = "<group>"; };
+		2C4EA21F7A9D7CBEC51613E83C86A73B /* CardIODetectionMode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIODetectionMode.h; path = CardIO/CardIODetectionMode.h; sourceTree = "<group>"; };
 		2E87F32BA3DB3F68880C8E29E7BC761D /* Pods-BidMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BidMeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E97604AD12C1AF551E2D8B174A6211F /* Pods-BidMeUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BidMeUITests-resources.sh"; sourceTree = "<group>"; };
+		3420E5700EE43E3100768761A114706D /* PayPalConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalConfiguration.h; path = PayPalMobile/PayPalConfiguration.h; sourceTree = "<group>"; };
+		343E12D32BAC68397FADCA0FEA7D5323 /* libCardIO.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCardIO.a; path = CardIO/libCardIO.a; sourceTree = "<group>"; };
 		391E9ADD8CC3319747E0AF7F8EAB92A9 /* Pods-BidMeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BidMeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		417FAF613145AB93297D5AEC6382804E /* PayPalPayment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalPayment.h; path = PayPalMobile/PayPalPayment.h; sourceTree = "<group>"; };
 		41B24C037631F4BCBA82B84922EF5460 /* Pods-BidMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BidMe.release.xcconfig"; sourceTree = "<group>"; };
+		4CB297262D24EC24ED1E2FC3500EF0FE /* PayPalProfileSharingViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalProfileSharingViewController.h; path = PayPalMobile/PayPalProfileSharingViewController.h; sourceTree = "<group>"; };
 		4EFCB293EAB1CB644AE5CFB65DE8635B /* Pods-BidMe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BidMe-acknowledgements.plist"; sourceTree = "<group>"; };
+		4F4DA96A0E6198CA65206C30B46AAB68 /* PayPalMobile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalMobile.h; path = PayPalMobile/PayPalMobile.h; sourceTree = "<group>"; };
 		60B080898BE571B305782CB956B85715 /* Pods-BidMeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BidMeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		618743DBEF5C698164437ECF14D71F40 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloud.framework; path = "iOS/release-v3.1.6.6/Dynamic/AVOSCloud.framework"; sourceTree = "<group>"; };
+		658DC65D5A58A17FE86183E6D3C9F835 /* CardIOUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOUtilities.h; path = CardIO/CardIOUtilities.h; sourceTree = "<group>"; };
+		6771B8DDC25CFC8EF44D2FAB73CACD02 /* CardIOViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOViewDelegate.h; path = CardIO/CardIOViewDelegate.h; sourceTree = "<group>"; };
 		6ADF345CFAC4E835AED70EC050100F5A /* Pods-BidMe-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BidMe-resources.sh"; sourceTree = "<group>"; };
+		6C9070837FEFB935499D58D1A8A7B16A /* libopencv_core.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libopencv_core.a; path = CardIO/libopencv_core.a; sourceTree = "<group>"; };
 		7E4777A248382744EFDFB59B3E13D333 /* Pods-BidMeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BidMeTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		867C88A4BA4D9ED4C60C9683DEDF6735 /* Pods-BidMeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BidMeTests-dummy.m"; sourceTree = "<group>"; };
+		8EE11CDBC0254D62BBAE0316F7282429 /* libPayPalMobile.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libPayPalMobile.a; path = PayPalMobile/libPayPalMobile.a; sourceTree = "<group>"; };
 		8F28950A2B8CE2A7A588267C413F031D /* Pods-BidMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BidMe.debug.xcconfig"; sourceTree = "<group>"; };
+		8FD699701690905E739B1CF10DC6B362 /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOPaymentViewController.h; path = CardIO/CardIOPaymentViewController.h; sourceTree = "<group>"; };
 		97DC45B4C62E2050B284E998BD4B35AA /* Pods-BidMeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BidMeUITests-frameworks.sh"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BC17396225845A293B856FE654B19E19 /* Pods-BidMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BidMeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BCC50AA740B59C5EFC526E8361F9032B /* Pods-BidMeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BidMeUITests-dummy.m"; sourceTree = "<group>"; };
 		C7237B9966A2E0DD86A99DC93B2934CF /* libPods-BidMeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BidMeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6B70EF85E9CF6B64AFCC0438780B5E4 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloud.framework; path = "iOS/release-v3.1.6.6/Dynamic/AVOSCloud.framework"; sourceTree = "<group>"; };
 		D7CE4ECA06CBF16EBF568550EB0D91C7 /* Pods-BidMeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BidMeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D9D8ABA8A6A7D81BB9B7AF3B4229F0F4 /* libPods-BidMeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BidMeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3D136C24D2A1BF260EBB87A69F538D6 /* libopencv_imgproc.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libopencv_imgproc.a; path = CardIO/libopencv_imgproc.a; sourceTree = "<group>"; };
+		E603CE0CE2271F1655491247C0F6B2AC /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalFuturePaymentViewController.h; path = PayPalMobile/PayPalFuturePaymentViewController.h; sourceTree = "<group>"; };
 		EA9EC55D6AE42DDEAC3943AFB6979F32 /* Pods-BidMe-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BidMe-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F6B84CE3787E7CE9059CAF8C551775DB /* libPods-BidMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BidMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C29461F2AEEC236523499362844E8E /* Pods-BidMe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BidMe-dummy.m"; sourceTree = "<group>"; };
+		FB8329B28BDA3D5CE2FDC2F25B721BAE /* CardIO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIO.h; path = CardIO/CardIO.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +117,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2C4A48CE0900F0E615F56D33850A7A31 /* CardIO */ = {
+			isa = PBXGroup;
+			children = (
+				FB8329B28BDA3D5CE2FDC2F25B721BAE /* CardIO.h */,
+				08D8BE92D216E9E4DC013C9AE9EF7289 /* CardIOCreditCardInfo.h */,
+				2C4EA21F7A9D7CBEC51613E83C86A73B /* CardIODetectionMode.h */,
+				8FD699701690905E739B1CF10DC6B362 /* CardIOPaymentViewController.h */,
+				2929D731E0EC3C534510E75B9882FDE7 /* CardIOPaymentViewControllerDelegate.h */,
+				658DC65D5A58A17FE86183E6D3C9F835 /* CardIOUtilities.h */,
+				111FA3E393DDDB2DE3FA191C6C8D3626 /* CardIOView.h */,
+				6771B8DDC25CFC8EF44D2FAB73CACD02 /* CardIOViewDelegate.h */,
+				FE88595EDA2F95153632E82B1C763CB4 /* Frameworks */,
+			);
+			path = CardIO;
+			sourceTree = "<group>";
+		};
 		2E710EACD7022E1A9DCBED34AC3C015A /* Pods-BidMe */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,10 +148,33 @@
 			path = "Target Support Files/Pods-BidMe";
 			sourceTree = "<group>";
 		};
-		530AAD70A09526A733ABBA32595E7DAD /* Frameworks */ = {
+		33BDE448CAAA3EAB4E8D8015EC8441D5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D6B70EF85E9CF6B64AFCC0438780B5E4 /* AVOSCloud.framework */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		66C2E886F9790C89B311C2A56B2CB212 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EE11CDBC0254D62BBAE0316F7282429 /* libPayPalMobile.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78754CC48A2ED6BF13E1E9459D1C54D9 /* PayPal-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				81AED85D49799930CFCEE1E634D58237 /* Core */,
+			);
+			path = "PayPal-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		79AA959D21D61DBA5B8AD9C9DA61BFAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				618743DBEF5C698164437ECF14D71F40 /* AVOSCloud.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,10 +184,25 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				AB23F2AD5EF9A8C4D5D6FC151948739C /* Pods */,
+				EE04E41B09E74BC6382BC8DEFEF759A4 /* Pods */,
 				1215E4B6D7336DE2BA491B421CD5AA0E /* Products */,
 				8D7DBC779D87E565B65BFE02A7071C98 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		81AED85D49799930CFCEE1E634D58237 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3420E5700EE43E3100768761A114706D /* PayPalConfiguration.h */,
+				E603CE0CE2271F1655491247C0F6B2AC /* PayPalFuturePaymentViewController.h */,
+				4F4DA96A0E6198CA65206C30B46AAB68 /* PayPalMobile.h */,
+				0B83ED84D9EEB89778214E961A5A0650 /* PayPalOAuthScopes.h */,
+				417FAF613145AB93297D5AEC6382804E /* PayPalPayment.h */,
+				29C85F57A672BD59838EAABB8BEE0DD3 /* PayPalPaymentViewController.h */,
+				4CB297262D24EC24ED1E2FC3500EF0FE /* PayPalProfileSharingViewController.h */,
+				66C2E886F9790C89B311C2A56B2CB212 /* Frameworks */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		8D7DBC779D87E565B65BFE02A7071C98 /* Targets Support Files */ = {
@@ -140,22 +213,6 @@
 				0C21FAECB77E46AE8FF8482A354EF1DA /* Pods-BidMeUITests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		8F098E2A9B484AA0135B76FF9DF9B178 /* AVOSCloudDynamic */ = {
-			isa = PBXGroup;
-			children = (
-				530AAD70A09526A733ABBA32595E7DAD /* Frameworks */,
-				986AE143EF7D03F78220D6BF74F63ED8 /* Resources */,
-			);
-			path = AVOSCloudDynamic;
-			sourceTree = "<group>";
-		};
-		986AE143EF7D03F78220D6BF74F63ED8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		9E1B28FC118BBCD7099C18CCB84410BB /* Pods-BidMeTests */ = {
@@ -173,14 +230,6 @@
 			path = "Target Support Files/Pods-BidMeTests";
 			sourceTree = "<group>";
 		};
-		AB23F2AD5EF9A8C4D5D6FC151948739C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8F098E2A9B484AA0135B76FF9DF9B178 /* AVOSCloudDynamic */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +244,35 @@
 				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		DE21069BA0BE3834DA3998C2050EB698 /* AVOSCloudDynamic */ = {
+			isa = PBXGroup;
+			children = (
+				79AA959D21D61DBA5B8AD9C9DA61BFAD /* Frameworks */,
+				33BDE448CAAA3EAB4E8D8015EC8441D5 /* Resources */,
+			);
+			path = AVOSCloudDynamic;
+			sourceTree = "<group>";
+		};
+		EE04E41B09E74BC6382BC8DEFEF759A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE21069BA0BE3834DA3998C2050EB698 /* AVOSCloudDynamic */,
+				2C4A48CE0900F0E615F56D33850A7A31 /* CardIO */,
+				78754CC48A2ED6BF13E1E9459D1C54D9 /* PayPal-iOS-SDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE88595EDA2F95153632E82B1C763CB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				343E12D32BAC68397FADCA0FEA7D5323 /* libCardIO.a */,
+				6C9070837FEFB935499D58D1A8A7B16A /* libopencv_core.a */,
+				E3D136C24D2A1BF260EBB87A69F538D6 /* libopencv_imgproc.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

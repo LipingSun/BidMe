@@ -36,6 +36,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         AVOSCloud.setAllLogsEnabled(true)
         
+        // Paypal
+        PayPalMobile.initializeWithClientIdsForEnvironments([PayPalEnvironmentSandbox:"Acg02hRXEnf5_NGSQhPRHz4QDlBmZiknTO5FJVLOhlZE0Wct-BsG9xXxNZIKbaHDnH8riqp8mn7qkX5g"])
+        
         // Center Control
         var rootViewController = self.window!.rootViewController
         

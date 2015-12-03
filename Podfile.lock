@@ -1,10 +1,20 @@
 PODS:
   - AVOSCloudDynamic (3.1.6.6)
+  - CardIO (5.2.2)
+  - PayPal-iOS-SDK (2.12.7):
+    - PayPal-iOS-SDK/CardIO (= 2.12.7)
+    - PayPal-iOS-SDK/Core (= 2.12.7)
+  - PayPal-iOS-SDK/CardIO (2.12.7):
+    - CardIO (~> 5.2.2)
+  - PayPal-iOS-SDK/Core (2.12.7)
 
 DEPENDENCIES:
   - AVOSCloudDynamic
+  - PayPal-iOS-SDK
 
 SPEC CHECKSUMS:
   AVOSCloudDynamic: d7d15b62e08b81c0e4931bcb4a7409afff7a6392
+  CardIO: 2460db0f4936f3441b08d51e3904b436d77ec8fc
+  PayPal-iOS-SDK: 401d441844bd6f0e08905dcdd7795f44c5ecef6c
 
 COCOAPODS: 0.39.0
