@@ -17,6 +17,9 @@ class MapViewController: UIViewController,MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        setupLeftMenuButton()
+        
         BidMapView.delegate = self
         
         let initialLocation = CLLocation(latitude: 37.3883809, longitude:-121.8834904)
@@ -68,5 +71,14 @@ class MapViewController: UIViewController,MKMapViewDelegate {
 //            annotationview.highlighted = true
 //
             return v
+    }
+    
+    func setupLeftMenuButton() {
+        let leftDrawerButton = MMDrawerBarButtonItem(target: self, action: "leftSideMenuTapped:")
+        self.navigationItem.setLeftBarButtonItem(leftDrawerButton, animated: false)
+    }
+    
+    func leftSideMenuTapped(sender: AnyObject) {
+        self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
     }
 }

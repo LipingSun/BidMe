@@ -11,19 +11,25 @@ import UIKit
 var itemList = ["Printer", "Monitor", "Table", "Chair"]
 var imageList = [UIImage(named: "puppy1"), UIImage(named: "puppy2"), UIImage(named: "puppy3"), UIImage(named: "puppy4")]
 
-class CenterViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AuctionListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        setupLeftMenuButton()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func setupLeftMenuButton() {
+        let leftDrawerButton = MMDrawerBarButtonItem(target: self, action: "leftSideMenuTapped:")
+        self.navigationItem.setLeftBarButtonItem(leftDrawerButton, animated: false)
+    }
 
-    @IBAction func leftSideMenuTapped(sender: AnyObject) {
+    func leftSideMenuTapped(sender: AnyObject) {
         self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
     }
     

@@ -19,14 +19,18 @@ class AuctionEvent: NSObject, MKAnnotation{
     let locationName: String
     let category: String
     let coordinate: CLLocationCoordinate2D
+    var image: UIImage?
     
     init(title: String, locationName: String, category: String, coordinate: CLLocationCoordinate2D) {
         self.title = title
         self.locationName = locationName
         self.category = category
         self.coordinate = coordinate
-        
         super.init()
+    }
+    
+    func assignImage(img: UIImage){
+        self.image = img
     }
     
     init(auction: Auction) {
@@ -43,6 +47,7 @@ class AuctionEvent: NSObject, MKAnnotation{
             }else{
                 self.category = ""
             }
+            
         }else{
             self.title = "mystery"
             self.category = ""
@@ -58,5 +63,5 @@ class AuctionEvent: NSObject, MKAnnotation{
     var subtitle: String? {
         return category
     }
-
+    
 }

@@ -15,7 +15,7 @@
         <!--BidMe-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CenterViewController" customModule="BidMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AuctionListViewController" customModule="BidMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -66,11 +66,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="BidMe" id="Vzd-pG-EJX">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="7gJ-uf-QTk">
-                            <connections>
-                                <action selector="leftSideMenuTapped:" destination="BYZ-38-t0r" id="jIO-vE-bdk"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1nS-vs-KtE">
                             <connections>
                                 <segue destination="535-31-my7" kind="show" id="Jvl-fC-AH5"/>

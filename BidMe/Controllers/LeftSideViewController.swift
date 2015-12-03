@@ -10,7 +10,7 @@ import UIKit
 
 class LeftSideViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var menuItems:[String] = ["Home", "Account", "MapView", "History"]
+    var menuItems:[String] = ["Home", "Account", "Map", "History"]
     
     var currentIndex = 0
     
@@ -43,24 +43,18 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
             return
         }
         
-        var centerViewController:CenterViewController?
+        var centerViewController: UIViewController?
         switch(indexPath.row) {
         
         case 0:
-            centerViewController = self.storyboard!.instantiateViewControllerWithIdentifier("AuctionListTopViewController") as? CenterViewController
+            centerViewController = self.storyboard!.instantiateViewControllerWithIdentifier("AuctionListTopViewController")
             break
         case 1:
+//            centerViewController = self.storyboard!.instantiateViewControllerWithIdentifier("") as? CenterViewController
             break
-            
         case 2:
-//            let mapStoryboard: UIStoryboard = UIStoryboard(name: "Map", bundle: nil)
-//            var mapViewController = mapStoryboard.instantiateViewControllerWithIdentifier("MapViewController") as! MapViewController
-//            var mapNavController = UINavigationController(rootViewController: mapViewController)
-//            var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-//            
-//            appDelegate.centerContainer!.centerViewController = mapNavController
-//            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
-            
+            let mapStoryboard: UIStoryboard = UIStoryboard(name: "Map", bundle: nil)
+            centerViewController = mapStoryboard.instantiateViewControllerWithIdentifier("MapTopViewController")
             break
             
         default:
