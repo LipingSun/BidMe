@@ -11,14 +11,6 @@ import AVOSCloud
 
 class Item: AVObject, AVSubclassing {
     
-//    init(name: NSString, desc: NSString, picture: AVFile, owner: User) {
-//        super.init()
-//        self.name = name
-//        self.desc = desc
-////        self.picture = picture
-//        self.owner = owner
-//    }
-    
     @NSManaged var name: NSString?
     
     @NSManaged var desc: NSString?
@@ -28,6 +20,18 @@ class Item: AVObject, AVSubclassing {
 //    @NSManaged var pictures: [AVFile]?
     
     @NSManaged var owner: User?
+    
+    override init() {
+        super.init()
+    }
+    
+    init(name: NSString, desc: NSString, picture: AVFile, owner: User) {
+        super.init()
+        self.name = name
+        self.desc = desc
+        self.picture = picture
+        self.owner = owner
+    }
     
     static func parseClassName() -> String! {
         return "Item"

@@ -26,13 +26,19 @@ class Auction: AVObject, AVSubclassing {
     
     @NSManaged var status: NSString?
     
+    override init() {
+        super.init()
+    }
+    
+    init(item: Item, startPrice: NSNumber) {
+        super.init()
+        self.item = item
+//        self.location = location
+        self.startPrice = startPrice
+    }
+    
     static func parseClassName() -> String! {
         return "Auction"
     }
-    
-//    internal var coordinate: CLLocationCoordinate2D{
-//        let coord = CLLocationCoordinate2D(latitude: location!.latitude, longitude: location!.latitude)
-//        return coord
-//    }
     
 }
