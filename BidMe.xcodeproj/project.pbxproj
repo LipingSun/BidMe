@@ -31,6 +31,7 @@
 		EE3DBC631C0D5247001E5889 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DBC601C0D5247001E5889 /* UserTests.swift */; };
 		EE76BEA21C012F6A00780BBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE76BEA11C012F6A00780BBE /* LaunchScreen.storyboard */; };
 		EE78858E1C10ABC700AC37A7 /* BidMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EED9F8B91BFEA64100B1688C /* BidMe.xcdatamodeld */; };
+		EE7885901C1113D200AC37A7 /* Auction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE78858F1C1113D200AC37A7 /* Auction.storyboard */; };
 		EED6FD5E1C0FFD9D008D85D4 /* Center.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED6FD5D1C0FFD9D008D85D4 /* Center.storyboard */; };
 		EED6FD601C0FFDCE008D85D4 /* AuctionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD5F1C0FFDCE008D85D4 /* AuctionListViewController.swift */; };
 		EED6FD621C0FFE05008D85D4 /* LeftSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD611C0FFE05008D85D4 /* LeftSideViewController.swift */; };
@@ -40,9 +41,7 @@
 		EED6FD811C1001E8008D85D4 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD7C1C1001E8008D85D4 /* MMDrawerController.m */; };
 		EED6FD821C1001E8008D85D4 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD7F1C1001E8008D85D4 /* MMDrawerVisualState.m */; };
 		EED6FD851C1001ED008D85D4 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD841C1001ED008D85D4 /* UIViewController+MMDrawerController.m */; };
-		EED6FD8D1C1009C9008D85D4 /* Auction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED6FD8C1C1009C9008D85D4 /* Auction.storyboard */; };
 		EED6FD8F1C1009D0008D85D4 /* AuctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD8E1C1009D0008D85D4 /* AuctionViewController.swift */; };
-		EED6FD911C10156A008D85D4 /* AuctionDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED6FD901C10156A008D85D4 /* AuctionDetail.storyboard */; };
 		EED6FD931C101619008D85D4 /* AuctionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD921C101619008D85D4 /* AuctionDetailViewController.swift */; };
 		EED6FD951C10177A008D85D4 /* Paypal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED6FD941C10177A008D85D4 /* Paypal.storyboard */; };
 		EED6FD971C101796008D85D4 /* PaypalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD961C101796008D85D4 /* PaypalViewController.swift */; };
@@ -101,6 +100,7 @@
 		EE3DBC5F1C0D5247001E5889 /* ItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
 		EE3DBC601C0D5247001E5889 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		EE76BEA11C012F6A00780BBE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE78858F1C1113D200AC37A7 /* Auction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auction.storyboard; sourceTree = "<group>"; };
 		EED6FD5D1C0FFD9D008D85D4 /* Center.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Center.storyboard; sourceTree = "<group>"; };
 		EED6FD5F1C0FFDCE008D85D4 /* AuctionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionListViewController.swift; sourceTree = "<group>"; };
 		EED6FD611C0FFE05008D85D4 /* LeftSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideViewController.swift; sourceTree = "<group>"; };
@@ -115,9 +115,7 @@
 		EED6FD7F1C1001E8008D85D4 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
 		EED6FD831C1001ED008D85D4 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
 		EED6FD841C1001ED008D85D4 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
-		EED6FD8C1C1009C9008D85D4 /* Auction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auction.storyboard; sourceTree = "<group>"; };
 		EED6FD8E1C1009D0008D85D4 /* AuctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionViewController.swift; sourceTree = "<group>"; };
-		EED6FD901C10156A008D85D4 /* AuctionDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AuctionDetail.storyboard; sourceTree = "<group>"; };
 		EED6FD921C101619008D85D4 /* AuctionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionDetailViewController.swift; sourceTree = "<group>"; };
 		EED6FD941C10177A008D85D4 /* Paypal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Paypal.storyboard; sourceTree = "<group>"; };
 		EED6FD961C101796008D85D4 /* PaypalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaypalViewController.swift; sourceTree = "<group>"; };
@@ -302,7 +300,7 @@
 		EED9F8E51BFEA8DD00B1688C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EED6FD8C1C1009C9008D85D4 /* Auction.storyboard */,
+				EE78858F1C1113D200AC37A7 /* Auction.storyboard */,
 				0A4002A91C07C4120054774D /* History.storyboard */,
 				0A4002AA1C07C4120054774D /* OngoingTableViewCell.swift */,
 				0A4002AB1C07C4120054774D /* Product.swift */,
@@ -313,7 +311,6 @@
 				EE76BEA11C012F6A00780BBE /* LaunchScreen.storyboard */,
 				0A4002B31C07C47C0054774D /* Account.storyboard */,
 				99A426391C0D3CDB001D7909 /* Map.storyboard */,
-				EED6FD901C10156A008D85D4 /* AuctionDetail.storyboard */,
 				EED6FD941C10177A008D85D4 /* Paypal.storyboard */,
 			);
 			path = Views;
@@ -453,10 +450,9 @@
 				EE76BEA21C012F6A00780BBE /* LaunchScreen.storyboard in Resources */,
 				EED6FD951C10177A008D85D4 /* Paypal.storyboard in Resources */,
 				0A4002B41C07C47C0054774D /* Account.storyboard in Resources */,
-				EED6FD8D1C1009C9008D85D4 /* Auction.storyboard in Resources */,
 				0A4002AE1C07C4120054774D /* History.storyboard in Resources */,
+				EE7885901C1113D200AC37A7 /* Auction.storyboard in Resources */,
 				EED6FD5E1C0FFD9D008D85D4 /* Center.storyboard in Resources */,
-				EED6FD911C10156A008D85D4 /* AuctionDetail.storyboard in Resources */,
 				EED9F8BD1BFEA64100B1688C /* Assets.xcassets in Resources */,
 				99A4263A1C0D3CDB001D7909 /* Map.storyboard in Resources */,
 			);

@@ -30,10 +30,10 @@ class Auction: AVObject, AVSubclassing {
         super.init()
     }
     
-    init(item: Item, startPrice: NSNumber) {
+    init(item: Item, location: AVGeoPoint, startPrice: NSNumber) {
         super.init()
         self.item = item
-//        self.location = location
+        self.location = location
         self.startPrice = startPrice
     }
     

@@ -53,9 +53,15 @@ class AuctionEvent: NSObject, MKAnnotation{
             self.category = ""
         }
         
+        self.image = UIImage(data: (auction.item?.picture?.getData())!)
+        
         self.locationName = "location"
         
-        self.coordinate = CLLocationCoordinate2D(latitude: auction.location!.latitude, longitude: auction.location!.longitude)
+        if let location = auction.location {
+            self.coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
+        } else {
+            self.coordinate = CLLocationCoordinate2D()
+        }
         
         super.init()
     }

@@ -32,11 +32,12 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButtonPressed(sender: AnyObject) {
         AVUser.logInWithUsernameInBackground(userName.text, password: password.text, block: {(user: AVUser?, error: NSError?) in
-            if let user = user {
+            if let user = user as? User {
                 print("login success!")
                 let centerStoryboard: UIStoryboard = UIStoryboard(name: "Center", bundle: nil)
                 let centerViewController = centerStoryboard.instantiateViewControllerWithIdentifier("PGTopViewController")
                 self.showViewController(centerViewController, sender: self)
+                
             } else {
                 print(error)
                 let alertController = UIAlertController(title: "Login Failed", message: nil, preferredStyle: UIAlertControllerStyle.Alert)

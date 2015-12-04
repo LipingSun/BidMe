@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SJSU_ENG.gpx">
+   </FileRef>
+   <FileRef
       location = "group:BidMe.xcodeproj">
    </FileRef>
    <FileRef
