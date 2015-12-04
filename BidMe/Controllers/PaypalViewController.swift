@@ -40,7 +40,7 @@ class PaypalViewController: UIViewController, PayPalPaymentDelegate {
         payPalConfig.payPalShippingAddressOption = .PayPal;
         PayPalMobile.preconnectWithEnvironment(environment)
         
-        
+        btnPressed(self)
         
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -67,7 +67,7 @@ class PaypalViewController: UIViewController, PayPalPaymentDelegate {
     }
     
     @IBAction func btnPressed(sender: AnyObject) {
-        var item1 = PayPalItem(name: "BidMe Inc .", withQuantity: 1,withPrice: NSDecimalNumber(string: "9.00"),withCurrency: "USD", withSku: "0001")
+        var item1 = PayPalItem(name: "BidMe Inc .", withQuantity: 1,withPrice: NSDecimalNumber(string: "100.00"),withCurrency: "USD", withSku: "0001")
         let items = [item1]
         let subtotal = PayPalItem.totalPriceForItems(items)
         

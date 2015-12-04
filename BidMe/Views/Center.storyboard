@@ -15,7 +15,7 @@
         <!--BidMe-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AuctionListViewController" customModule="BidMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuctionListViewController" id="BYZ-38-t0r" customClass="AuctionListViewController" customModule="BidMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -90,26 +90,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mal-To-p4T">
-                                <rect key="frame" x="164" y="573" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mal-To-p4T">
+                                <rect key="frame" x="61" y="576" width="253" height="54"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Bid"/>
+                                <state key="normal" title="Bid" image="bidnow"/>
                                 <connections>
                                     <segue destination="ZzQ-2v-kA6" kind="show" id="ywX-RQ-BEu"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ny7-7B-6tp">
-                                <rect key="frame" x="20" y="131" width="335" height="21"/>
+                                <rect key="frame" x="20" y="87" width="335" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2JL-vA-azm">
-                                <rect key="frame" x="49" y="183" width="277" height="277"/>
+                                <rect key="frame" x="49" y="135" width="277" height="277"/>
                                 <animations/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jG-jj-I30">
+                                <rect key="frame" x="27" y="434" width="307" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItE-eq-Len">
+                                <rect key="frame" x="27" y="463" width="320" height="73"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -117,8 +130,10 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="ItemDetailDesc" destination="ItE-eq-Len" id="Kg9-vY-vEP"/>
                         <outlet property="ItemDetailImage" destination="2JL-vA-azm" id="As7-gH-fP9"/>
                         <outlet property="ItemDetailLabel" destination="ny7-7B-6tp" id="bpG-vp-NgM"/>
+                        <outlet property="ItemDetailPrice" destination="2jG-jj-I30" id="BQX-tc-2dX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bmu-4c-qKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -131,7 +146,7 @@
                 <viewControllerPlaceholder storyboardName="Paypal" id="ZzQ-2v-kA6" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fX-bo-Cce" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2207.5" y="1963"/>
+            <point key="canvasLocation" x="2181.5" y="1731"/>
         </scene>
         <!--Left Side View Controller-->
         <scene sceneID="wSy-da-xvB">
@@ -339,5 +354,6 @@
     </scenes>
     <resources>
         <image name="bid" width="249" height="202"/>
+        <image name="bidnow" width="285" height="54"/>
     </resources>
 </document>

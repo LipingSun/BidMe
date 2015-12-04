@@ -14,15 +14,27 @@ class AuctionDetailViewController: UIViewController {
     
     @IBOutlet weak var ItemDetailImage: UIImageView!
     
+    @IBOutlet var ItemDetailDesc: UILabel!
+    
+    @IBOutlet var ItemDetailPrice: UILabel!
+    
     var passedValue:String?
     
     var passedImage:UIImage?
     
+    var auction: Auction?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ItemDetailLabel.text = passedValue
-        ItemDetailImage.image = passedImage
+//        ItemDetailLabel.text = passedValue
+//        ItemDetailImage.image = passedImage
+        if let auction = auction {
+            ItemDetailLabel.text = String(auction.item!.name!)
+            ItemDetailImage.image = UIImage(data: (auction.item!.picture!.getData())!)
+            ItemDetailDesc.text = "Description: " + String(auction.item!.desc!)
+            ItemDetailPrice.text = "Current Price: " + String(auction.startPrice!)
+        }
 
     }
     

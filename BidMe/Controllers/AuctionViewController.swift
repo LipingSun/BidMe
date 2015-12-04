@@ -45,6 +45,9 @@ class AuctionViewController: UIViewController, UINavigationControllerDelegate, U
 
         item.picture!.saveInBackgroundWithBlock({(succeeded: Bool, error: NSError?) in
             auctionObject.saveInBackground()
+            let centerStoryboard: UIStoryboard = UIStoryboard(name: "Center", bundle: nil)
+            let centerViewController = centerStoryboard.instantiateViewControllerWithIdentifier("AuctionListViewController")
+            self.showViewController(centerViewController, sender: self)
         })
     }
     

@@ -72,10 +72,8 @@ class AuctionListViewController: UIViewController, UITableViewDelegate, UITableV
 //            }
 //        })
         
-        
         cell.imageView?.image = UIImage(data: self.auctions[indexPath.row].item!.picture!.getData())
         cell.textLabel?.text = String(self.auctions[indexPath.row].item!.name!)
-        
         return cell
         
     }
@@ -90,9 +88,9 @@ class AuctionListViewController: UIViewController, UITableViewDelegate, UITableV
         let currentCell = tableView.cellForRowAtIndexPath(indexPath!) as UITableViewCell!;
         let storyboard = UIStoryboard(name: "Center", bundle: nil)
         let detailViewController = storyboard.instantiateViewControllerWithIdentifier("AuctionDetailViewController") as! AuctionDetailViewController
-        detailViewController.passedValue = currentCell.textLabel!.text
-        detailViewController.passedImage = currentCell.imageView!.image
-//        self.presentViewController(detailViewController, animated: true , completion: nil)
+//        detailViewController.passedValue = currentCell.textLabel!.text
+//        detailViewController.passedImage = currentCell.imageView!.image
+        detailViewController.auction = auctions[(indexPath?.row)!]
         self.showViewController(detailViewController, sender: self)
     }
     

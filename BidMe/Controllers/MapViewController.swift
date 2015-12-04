@@ -97,6 +97,18 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         return nil
     }
     
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+//            let centerStoryboard: UIStoryboard = UIStoryboard(name: "Center", bundle: nil)
+//            let centerViewController = centerStoryboard.instantiateViewControllerWithIdentifier("AuctionDetailViewController")
+//            self.showViewController(centerViewController, sender: self)
+//            if let ano = view as AuctionEvent{
+//                let detailViewController = centerStoryboard.instantiateViewControllerWithIdentifier("AuctionDetailViewController") as! AuctionDetailViewController
+//                detailViewController.passedValue = ano.title
+//                detailViewController.passedImage = ano.image
+//                self.showViewController(detailViewController, sender: self)
+//            }
+    }
+    
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if (!locations.isEmpty) {
             let myLocation  = locations[0]

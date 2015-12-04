@@ -50,13 +50,17 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
             centerViewController = self.storyboard!.instantiateViewControllerWithIdentifier("AuctionListTopViewController")
             break
         case 1:
-//            centerViewController = self.storyboard!.instantiateViewControllerWithIdentifier("") as? CenterViewController
+//            let historyStoryboard: UIStoryboard = UIStoryboard(name: "History", bundle: nil)
+//            centerViewController = historyStoryboard.instantiateViewControllerWithIdentifier("HistoryTopViewController")
             break
         case 2:
             let mapStoryboard: UIStoryboard = UIStoryboard(name: "Map", bundle: nil)
             centerViewController = mapStoryboard.instantiateViewControllerWithIdentifier("MapTopViewController")
             break
-            
+        case 3:
+//            let historyStoryboard: UIStoryboard = UIStoryboard(name: "History", bundle: nil)
+//            centerViewController = historyStoryboard.instantiateViewControllerWithIdentifier("HistoryTopViewController")
+            break
         default:
             print("\(menuItems[indexPath.row]) is selected")
         }
