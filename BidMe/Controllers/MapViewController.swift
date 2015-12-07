@@ -63,7 +63,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 //        BidMapView.addAnnotation(sample_event)
     }
     
-    let regionRadius: CLLocationDistance = 300
+    let regionRadius: CLLocationDistance = 1000
     
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
