@@ -35,5 +35,25 @@
             </objects>
             <point key="canvasLocation" x="-5" y="98"/>
         </scene>
+        <!--Bidding View Controller-->
+        <scene sceneID="iE3-Hx-Dig">
+            <objects>
+                <viewController id="5bb-yu-jYn" customClass="BiddingViewController" customModule="BidMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CjH-r6-OsY"/>
+                        <viewControllerLayoutGuide type="bottom" id="JMI-0w-S1s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fxq-1T-r6o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H1q-gR-5xI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="543.5" y="97.5"/>
+        </scene>
     </scenes>
 </document>

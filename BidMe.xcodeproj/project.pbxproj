@@ -35,6 +35,7 @@
 		EE3DBC631C0D5247001E5889 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DBC601C0D5247001E5889 /* UserTests.swift */; };
 		EE78858E1C10ABC700AC37A7 /* BidMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EED9F8B91BFEA64100B1688C /* BidMe.xcdatamodeld */; };
 		EE7885921C1130AE00AC37A7 /* PurchasedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7885911C1130AE00AC37A7 /* PurchasedTableViewController.swift */; };
+		EE8F30971C16240900904A6D /* BiddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8F30961C16240900904A6D /* BiddingViewController.swift */; };
 		EEA354C41C114AEF00843686 /* AuctionEventAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA354C31C114AEF00843686 /* AuctionEventAnnotationView.swift */; };
 		EED6FD601C0FFDCE008D85D4 /* AuctionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD5F1C0FFDCE008D85D4 /* AuctionListViewController.swift */; };
 		EED6FD621C0FFE05008D85D4 /* LeftSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED6FD611C0FFE05008D85D4 /* LeftSideViewController.swift */; };
@@ -106,6 +107,7 @@
 		EE3DBC5F1C0D5247001E5889 /* ItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
 		EE3DBC601C0D5247001E5889 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		EE7885911C1130AE00AC37A7 /* PurchasedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchasedTableViewController.swift; sourceTree = "<group>"; };
+		EE8F30961C16240900904A6D /* BiddingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiddingViewController.swift; sourceTree = "<group>"; };
 		EEA354C31C114AEF00843686 /* AuctionEventAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionEventAnnotationView.swift; sourceTree = "<group>"; };
 		EED6FD5F1C0FFDCE008D85D4 /* AuctionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionListViewController.swift; sourceTree = "<group>"; };
 		EED6FD611C0FFE05008D85D4 /* LeftSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideViewController.swift; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 				EED6FD961C101796008D85D4 /* PaypalViewController.swift */,
 				EED6FD981C107E6C008D85D4 /* PGViewController.swift */,
 				EE7885911C1130AE00AC37A7 /* PurchasedTableViewController.swift */,
+				EE8F30961C16240900904A6D /* BiddingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -624,6 +627,7 @@
 				EED6FD601C0FFDCE008D85D4 /* AuctionListViewController.swift in Sources */,
 				EE16F2031C0D034700B62C2B /* LoginViewController.swift in Sources */,
 				EED6FD971C101796008D85D4 /* PaypalViewController.swift in Sources */,
+				EE8F30971C16240900904A6D /* BiddingViewController.swift in Sources */,
 				EE16F1FA1C0CEF6D00B62C2B /* Payment.swift in Sources */,
 				EED6FD641C0FFE43008D85D4 /* AccountViewController.swift in Sources */,
 				0A4002B11C07C4120054774D /* PurchasedTableViewCell.swift in Sources */,
