@@ -18,7 +18,7 @@
 		87AC78211166D0DB8D3BFFD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AC70AF4992435B163CA0BF /* LaunchScreen.storyboard */; };
 		87AC79A1CF20D34C0B09430A /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AC727A79D8E2FA860B584B /* Account.storyboard */; };
 		87AC79B963106C283C98C7D1 /* Center.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AC78AC0EDDEC5DA755D8C2 /* Center.storyboard */; };
-		87AC7EAD4CC9D0F920921BF9 /* Paypal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AC760B0C725ECD6A43B49B /* Paypal.storyboard */; };
+		87AC7EAD4CC9D0F920921BF9 /* Bidding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AC760B0C725ECD6A43B49B /* Bidding.storyboard */; };
 		9284C5E957FEB2AB2516F662 /* libPods-BidMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CECEF525AB856385A387B0F /* libPods-BidMe.a */; };
 		99A4263C1C0D3E04001D7909 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A4263B1C0D3E04001D7909 /* MapViewController.swift */; };
 		99A4263E1C0D9D51001D7909 /* AuctionEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A4263D1C0D9D51001D7909 /* AuctionEvent.swift */; };
@@ -83,7 +83,7 @@
 		87AC70AF4992435B163CA0BF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87AC712E1E40A8A25B689672 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		87AC727A79D8E2FA860B584B /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
-		87AC760B0C725ECD6A43B49B /* Paypal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Paypal.storyboard; sourceTree = "<group>"; };
+		87AC760B0C725ECD6A43B49B /* Bidding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bidding.storyboard; sourceTree = "<group>"; };
 		87AC7683EA0D6F2722BAE2FE /* Auction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auction.storyboard; sourceTree = "<group>"; };
 		87AC78AC0EDDEC5DA755D8C2 /* Center.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Center.storyboard; sourceTree = "<group>"; };
 		87AC7E1A89EF147704FA3DA2 /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 				87AC712E1E40A8A25B689672 /* Map.storyboard */,
 				87AC7E1A89EF147704FA3DA2 /* History.storyboard */,
 				87AC70AF4992435B163CA0BF /* LaunchScreen.storyboard */,
-				87AC760B0C725ECD6A43B49B /* Paypal.storyboard */,
+				87AC760B0C725ECD6A43B49B /* Bidding.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -468,7 +468,7 @@
 				87AC73062C2D02EBE370C354 /* Map.storyboard in Resources */,
 				87AC76BA4E93FCFAC70D746D /* History.storyboard in Resources */,
 				87AC78211166D0DB8D3BFFD9 /* LaunchScreen.storyboard in Resources */,
-				87AC7EAD4CC9D0F920921BF9 /* Paypal.storyboard in Resources */,
+				87AC7EAD4CC9D0F920921BF9 /* Bidding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
