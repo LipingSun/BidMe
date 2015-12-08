@@ -29,6 +29,15 @@ class BiddingViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if let auctionItemName = auction?.item?.name {
+            itemName.text = "Item: " + String(auctionItemName)
+        }
+
+        if let auctionCurrentPrice = auction?.currentPrice {
+            currentPrice.text = "Current Price: " + String(auctionCurrentPrice)
+            highestPrice = Int(auctionCurrentPrice)
+        }
+
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
     }
 
@@ -40,26 +49,24 @@ class BiddingViewController: UIViewController {
     func update() {
 
         if let auction = auction {
-            auction.refresh()
-            auction.item!.fetch()
-            if let auctionItemName = auction.item?.name {
-                itemName.text = "Item: " + String(auctionItemName)
-            }
-            let biddingQuery = Bidding.query()
-            biddingQuery.whereKey("auction", equalTo: auction)
-            biddingQuery.orderByDescending("price")
-            biddingQuery.limit = 3
-            let highBiddings = biddingQuery.findObjects()
 
-            if let highBiddings = highBiddings {
-                highestPrice = Int(highBiddings[0].price)
-                currentPrice.text = "Current Price: " + String(highestPrice)
-            }
             if let auctionEndTime = auction.endTime {
                 let dateComponentsFormatter = NSDateComponentsFormatter()
                 dateComponentsFormatter.unitsStyle = NSDateComponentsFormatterUnitsStyle.Full
                 timeLeft.text = "Time Left: " + String(dateComponentsFormatter.stringFromTimeInterval(auctionEndTime.timeIntervalSinceNow)!)
             }
+
+            let biddingQuery = Bidding.query()
+            biddingQuery.whereKey("auction", equalTo: auction)
+            biddingQuery.orderByDescending("price")
+            biddingQuery.limit = 1
+            biddingQuery.findObjectsInBackgroundWithBlock({(objects: [AnyObject]?, error: NSError?) in
+                if (objects!.count >= 1) {
+                let highBiddings = objects as! [Bidding]
+                    self.highestPrice = Int(highBiddings[0].price!)
+                    self.currentPrice.text = "Current Price: " + String(self.highestPrice)
+                }
+            })
         }
     }
 
