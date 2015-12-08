@@ -53,7 +53,14 @@ class BiddingViewController: UIViewController {
             if let auctionEndTime = auction.endTime {
                 let dateComponentsFormatter = NSDateComponentsFormatter()
                 dateComponentsFormatter.unitsStyle = NSDateComponentsFormatterUnitsStyle.Full
-                timeLeft.text = "Time Left: " + String(dateComponentsFormatter.stringFromTimeInterval(auctionEndTime.timeIntervalSinceNow)!)
+                let interval = auctionEndTime.timeIntervalSinceNow
+
+                if (interval > -1) {
+                    timeLeft.text = "Time Left: " + String(dateComponentsFormatter.stringFromTimeInterval(interval)!)
+                } else {
+                    self.timer.invalidate()
+                    // Todo
+                }
             }
 
             let biddingQuery = Bidding.query()
