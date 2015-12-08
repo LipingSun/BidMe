@@ -27,8 +27,6 @@ class AuctionDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        ItemDetailLabel.text = passedValue
-//        ItemDetailImage.image = passedImage
         if let auction = auction {
             ItemDetailLabel.text = String(auction.item!.name!)
             ItemDetailImage.image = UIImage(data: (auction.item!.picture!.getData())!)
@@ -43,6 +41,12 @@ class AuctionDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func bidButtonTapped(sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "Bidding", bundle: nil)
+        let biddingViewController = storyboard.instantiateViewControllerWithIdentifier("BiddingViewController") as! BiddingViewController
+        biddingViewController.auction = auction
+        self.showViewController(biddingViewController, sender: self)
+    }
     
     /*
     // MARK: - Navigation
