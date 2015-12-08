@@ -15,12 +15,16 @@ class BiddingViewController: UIViewController {
 
     var timer = NSTimer()
 
+    var highestPrice = Int()
+
     @IBOutlet var itemName: UILabel!
 
     @IBOutlet var currentPrice: UILabel!
 
     @IBOutlet var timeLeft: UILabel!
 
+    @IBOutlet var newPrice: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,8 +45,15 @@ class BiddingViewController: UIViewController {
             if let auctionItemName = auction.item?.name {
                 itemName.text = "Item: " + String(auctionItemName)
             }
-            if let auctionCurrentPrice = auction.currentPrice {
-                currentPrice.text = "Current Price: " + String(auctionCurrentPrice)
+            let biddingQuery = Bidding.query()
+            biddingQuery.whereKey("auction", equalTo: auction)
+            biddingQuery.orderByDescending("price")
+            biddingQuery.limit = 3
+            let highBiddings = biddingQuery.findObjects()
+
+            if let highBiddings = highBiddings {
+                highestPrice = Int(highBiddings[0].price)
+                currentPrice.text = "Current Price: " + String(highestPrice)
             }
             if let auctionEndTime = auction.endTime {
                 let dateComponentsFormatter = NSDateComponentsFormatter()
@@ -51,6 +62,27 @@ class BiddingViewController: UIViewController {
             }
         }
     }
+
+    @IBAction func bidButtonTapped(sender: AnyObject) {
+        let bidding = Bidding()
+        bidding.auction = auction
+        bidding.bidder = User.currentUser()
+        if let newPrice = Int(newPrice.text!) {
+            if (newPrice > highestPrice) {
+                bidding.price = newPrice
+                bidding.save()
+            } else {
+//                let alertController = UIAlertController(title: "Your price is lower than current price!", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+//                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default, handler: nil))
+//                self.showViewController(alertController, sender: self)
+            }
+        } else {
+//            let alertController = UIAlertController(title: "Please input your bidding price!", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+//            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default, handler: nil))
+//            self.showViewController(alertController, sender: self)
+        }
+    }
+
 
     /*
     // MARK: - Navigation
