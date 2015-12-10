@@ -43,12 +43,12 @@ class AuctionViewController: UIViewController, UINavigationControllerDelegate, U
         auctionObject.endTime = endTime.date
         auctionObject.location = AVGeoPoint(latitude: 37.332224, longitude: -121.869382)
 
-        item.picture!.saveInBackgroundWithBlock({
-            (succeeded: Bool, error: NSError?) in
-            auctionObject.saveInBackground()
-            let centerStoryboard: UIStoryboard = UIStoryboard(name: "Center", bundle: nil)
-            let centerViewController = centerStoryboard.instantiateViewControllerWithIdentifier("AuctionListViewController")
-            self.showViewController(centerViewController, sender: self)
+        item.picture!.saveInBackgroundWithBlock({(succeeded: Bool, error: NSError?) in
+            auctionObject.saveInBackgroundWithBlock({(succeeded: Bool, error: NSError?) in
+                let centerStoryboard: UIStoryboard = UIStoryboard(name: "Center", bundle: nil)
+                let centerViewController = centerStoryboard.instantiateViewControllerWithIdentifier("AuctionListViewController")
+                self.showViewController(centerViewController, sender: self)
+            })
         })
     }
 

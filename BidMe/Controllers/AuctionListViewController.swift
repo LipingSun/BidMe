@@ -9,7 +9,7 @@
 import UIKit
 import AVOSCloud
 
-class AuctionListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AuctionListViewController: UITableViewController {
     
     var auctions:[Auction] = []
     
@@ -27,9 +27,14 @@ class AuctionListViewController: UIViewController, UITableViewDelegate, UITableV
 //        })
         let auctionQuery = Auction.query()
         auctionQuery.includeKey("item.picture")
-        self.auctions = auctionQuery.findObjects() as! [Auction]
+        auctionQuery.findObjectsInBackgroundWithBlock({(objects: [AnyObject]?, error: NSError?) in
+            if let auctions = objects as? [Auction] {
+                self.auctions = auctions
+            }
+            self.tableView.reloadData()
+        })
+//        self.auctions = auctionQuery.findObjects() as! [Auction]
 
-//        self.auctions = Auction.query().findObjects() as! [Auction]
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,21 +50,12 @@ class AuctionListViewController: UIViewController, UITableViewDelegate, UITableV
     func leftSideMenuTapped(sender: AnyObject) {
         self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
     }
-    
-//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        var cell = UITableViewCell(style: .Default, reuseIdentifier: "cell")
-//        
-//        cell.imageView?.image = imageList[indexPath.row]
-//        cell.textLabel?.text = auctions[indexPath.row].item!.name as? String
-//        
-//        return cell
-//    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.auctions.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .Default, reuseIdentifier: "cell")
         
 //        Auction.query().findObjectsInBackgroundWithBlock({(objects: [AnyObject]?, error: NSError?) in
@@ -78,18 +74,12 @@ class AuctionListViewController: UIViewController, UITableViewDelegate, UITableV
         
     }
     
-//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        self.performSegueWithIdentifier("showDetail", sender: self)
-//    }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         // Get Cell Label
         let indexPath = tableView.indexPathForSelectedRow;
         let currentCell = tableView.cellForRowAtIndexPath(indexPath!) as UITableViewCell!;
         let storyboard = UIStoryboard(name: "Center", bundle: nil)
         let detailViewController = storyboard.instantiateViewControllerWithIdentifier("AuctionDetailViewController") as! AuctionDetailViewController
-//        detailViewController.passedValue = currentCell.textLabel!.text
-//        detailViewController.passedImage = currentCell.imageView!.image
         detailViewController.auction = auctions[(indexPath?.row)!]
         self.showViewController(detailViewController, sender: self)
     }
