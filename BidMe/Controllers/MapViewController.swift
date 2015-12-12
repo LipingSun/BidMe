@@ -12,28 +12,28 @@ import MapKit
 import AVOSCloud
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
-    
+
     @IBOutlet weak var BidMapView: MKMapView!
     var locationManager : CLLocationManager!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view, typically from a nib.
         setupLeftMenuButton()
-        
+
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
-        
+
         BidMapView.delegate = self
         BidMapView.showsUserLocation = true
-        
+
         let initialLocation = CLLocation(latitude: 37.334959, longitude:-121.880591)
         centerMapOnLocation(initialLocation)
-        
+
         let auctionQuery = Auction.query()
         auctionQuery.includeKey("item.picture")
         auctionQuery.findObjectsInBackgroundWithBlock({(objects: [AnyObject]?, error: NSError?) in
@@ -47,8 +47,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                 }
             }
         })
-        
-        
+
+
 //        let sample_auction = Auction()
 //        
 //        let item = Item()
@@ -62,29 +62,35 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 //        
 //        BidMapView.addAnnotation(sample_event)
     }
-    
+
     let regionRadius: CLLocationDistance = 1000
-    
+
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-            regionRadius * 2.0, regionRadius * 2.0)
+                regionRadius * 2.0, regionRadius * 2.0)
         BidMapView.setRegion(coordinateRegion, animated: true)
     }
-    
+    //Dexter: func updated
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         if let annotation = annotation as? AuctionEvent {
             let identifier = "pin"
-            var view: MKAnnotationView
+            var view: AuctionEventAnnotationView
             if let dequeuedView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier)
-                as? MKPinAnnotationView { // 2
-                    dequeuedView.annotation = annotation
-                    view = dequeuedView
+                    as? AuctionEventAnnotationView { // 2
+                dequeuedView.annotation = annotation
+                view = dequeuedView
+                view.assignEvent(annotation.act)
+                print("assigning item to AuctionEventAnnotationView")
+                print(view.auction?.item?.name)
             } else {
                 // 3
-                view = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                view = AuctionEventAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 view.canShowCallout = true
                 view.calloutOffset = CGPoint(x: -5, y: 5)
                 view.rightCalloutAccessoryView = UIButton(type: UIButtonType.DetailDisclosure)
+                view.assignEvent(annotation.act)
+                print("assigning item to AuctionEventAnnotationView")
+                print(view.auction?.item?.name)
             }
             print("here B")
             if let img = annotation.image {
@@ -96,31 +102,30 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         }
         return nil
     }
-    
-    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-//            let centerStoryboard: UIStoryboard = UIStoryboard(name: "Center", bundle: nil)
-//            let centerViewController = centerStoryboard.instantiateViewControllerWithIdentifier("AuctionDetailViewController")
-//            self.showViewController(centerViewController, sender: self)
-//            if let ano = view as AuctionEvent{
-//                let detailViewController = centerStoryboard.instantiateViewControllerWithIdentifier("AuctionDetailViewController") as! AuctionDetailViewController
-//                detailViewController.passedValue = ano.title
-//                detailViewController.passedImage = ano.image
-//                self.showViewController(detailViewController, sender: self)
-//            }
+    //Dexter:   func updated
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView!, calloutAccessoryControlTapped control: UIControl) {
+        let centerStoryboard: UIStoryboard = UIStoryboard(name: "Center", bundle: nil)
+        if let ano = view as? AuctionEventAnnotationView{
+
+            let detailViewController = centerStoryboard.instantiateViewControllerWithIdentifier("AuctionDetailViewController") as! AuctionDetailViewController
+            detailViewController.auction = ano.auction
+
+            self.showViewController(detailViewController, sender: self)
+        }
     }
-    
+
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if (!locations.isEmpty) {
             let myLocation  = locations[0]
             BidMapView.setRegion(MKCoordinateRegionMake(CLLocationCoordinate2DMake(myLocation.coordinate.latitude, myLocation.coordinate.longitude), BidMapView.region.span), animated: true)
         }
     }
-    
+
     func setupLeftMenuButton() {
         let leftDrawerButton = MMDrawerBarButtonItem(target: self, action: "leftSideMenuTapped:")
         self.navigationItem.setLeftBarButtonItem(leftDrawerButton, animated: false)
     }
-    
+
     func leftSideMenuTapped(sender: AnyObject) {
         self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
     }
