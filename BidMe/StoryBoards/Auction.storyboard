@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="czh-th-h7Z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jJG-rY-UHn">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -9,7 +9,7 @@
         <!--Auction View Controller-->
         <scene sceneID="4WU-qT-PK6">
             <objects>
-                <viewController id="czh-th-h7Z" customClass="AuctionViewController" customModule="BidMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="czh-th-h7Z" customClass="AuctionViewController_" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OsL-LL-jba"/>
                         <viewControllerLayoutGuide type="bottom" id="ZJI-sT-qU6"/>
@@ -187,7 +187,193 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8PQ-xO-4EF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="397.5" y="285.5"/>
+            <point key="canvasLocation" x="199.5" y="285.5"/>
+        </scene>
+        <!--Auction View Controller-->
+        <scene sceneID="qvH-iJ-HOr">
+            <objects>
+                <viewController id="jJG-rY-UHn" customClass="AuctionViewController" customModule="BidMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Osp-Pk-GRT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kp1-fb-J0a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hz2-g8-cLD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BidMe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGg-to-7mM">
+                                <rect key="frame" x="58" y="60" width="259" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
+                                <color key="textColor" red="0.60915320969999998" green="0.1550533241" blue="0.33143229410000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="l6y-p1-l34">
+                                <rect key="frame" x="41" y="160" width="293" height="467"/>
+                                <subviews>
+                                    <textField clipsSubviews="YES" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Name" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ID1-8D-GCl">
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="30"/>
+                                        <color key="backgroundColor" red="0.60915320969999998" green="0.1550533241" blue="0.33143229410000002" alpha="0.080000000000000002" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="CuU-xY-rXe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                    </textField>
+                                    <textField clipsSubviews="YES" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Start Price" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="r0R-ah-cYr">
+                                        <rect key="frame" x="0.0" y="32" width="293" height="30"/>
+                                        <color key="backgroundColor" red="0.60915320969999998" green="0.1550533241" blue="0.33143229410000002" alpha="0.080000000000000002" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="8r7-RZ-yhe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DHm-7S-psp">
+                                        <rect key="frame" x="0.0" y="64" width="293" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="Start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvX-Kr-88C">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="pU7-gd-Xge"/>
+                                                    <constraint firstAttribute="width" constant="40" id="t1C-Dd-RYM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <datePicker contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="GXe-SX-9ev">
+                                                <rect key="frame" x="50" y="0.0" width="243" height="40"/>
+                                                <color key="backgroundColor" red="0.91972086259999997" green="0.23097887180000001" blue="0.49907817580000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="tl1-v3-VTn"/>
+                                                </constraints>
+                                                <date key="date" timeIntervalSinceReferenceDate="470469675.50196397">
+                                                    <!--2015-11-29 06:01:15 +0000-->
+                                                </date>
+                                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                                    <!--1970-01-01 11:00:00 +0000-->
+                                                </date>
+                                                <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                                    <!--2037-12-31 11:00:00 +0000-->
+                                                </date>
+                                            </datePicker>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="GXe-SX-9ev" firstAttribute="leading" secondItem="zvX-Kr-88C" secondAttribute="trailing" constant="10" id="pdz-mP-lva"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="pdz-mP-lva"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KsO-J7-YIH">
+                                        <rect key="frame" x="0.0" y="106" width="293" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DxB-MQ-S4J">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="6fZ-eQ-qbN"/>
+                                                    <constraint firstAttribute="width" constant="40" id="9pa-wv-Z6u"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <datePicker contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="GBd-x6-Hyb">
+                                                <rect key="frame" x="50" y="0.0" width="243" height="40"/>
+                                                <color key="backgroundColor" red="0.91972086259999997" green="0.23097887180000001" blue="0.49907817580000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="9Sm-Yq-3vw"/>
+                                                </constraints>
+                                                <date key="date" timeIntervalSinceReferenceDate="470728872.41134602">
+                                                    <!--2015-12-02 06:01:12 +0000-->
+                                                </date>
+                                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                                    <!--1970-01-01 11:00:00 +0000-->
+                                                </date>
+                                                <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                                    <!--2037-12-31 11:00:00 +0000-->
+                                                </date>
+                                            </datePicker>
+                                        </subviews>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter Description..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5Ta-aM-JMB">
+                                        <rect key="frame" x="0.0" y="148" width="293" height="55"/>
+                                        <color key="backgroundColor" red="0.60915320969999998" green="0.1550533241" blue="0.33143229410000002" alpha="0.080000000000000002" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="X3O-hK-fbS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="ZQT-S8-afd">
+                                        <rect key="frame" x="0.0" y="205" width="293" height="54"/>
+                                        <color key="backgroundColor" red="0.60915320969999998" green="0.56144564689999998" blue="0.5786574471" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7U-ar-rNx">
+                                        <rect key="frame" x="0.0" y="261" width="293" height="206"/>
+                                        <color key="backgroundColor" red="0.60915320969999998" green="0.1550533241" blue="0.33143229410000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Xg8-CK-3tC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Publish">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="publishItem:" destination="jJG-rY-UHn" eventType="touchUpInside" id="V34-rS-ZZj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZQT-S8-afd" firstAttribute="leading" secondItem="5Ta-aM-JMB" secondAttribute="leading" id="bZ5-Fr-Xhv"/>
+                                    <constraint firstItem="ZQT-S8-afd" firstAttribute="leading" secondItem="5Ta-aM-JMB" secondAttribute="leading" id="k4R-Lv-6H0"/>
+                                    <constraint firstItem="r0R-ah-cYr" firstAttribute="height" secondItem="ID1-8D-GCl" secondAttribute="height" id="txe-BI-Qf6"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bZ5-Fr-Xhv"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l6y-p1-l34" firstAttribute="leading" secondItem="hz2-g8-cLD" secondAttribute="leadingMargin" constant="25" id="Glm-7D-HF2"/>
+                            <constraint firstItem="l6y-p1-l34" firstAttribute="top" secondItem="XGg-to-7mM" secondAttribute="bottom" constant="40" id="LGw-7e-8s7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XGg-to-7mM" secondAttribute="trailing" constant="42" id="NAo-tl-ItC"/>
+                            <constraint firstItem="Kp1-fb-J0a" firstAttribute="top" secondItem="l6y-p1-l34" secondAttribute="bottom" constant="40" id="TAB-vH-Jr6"/>
+                            <constraint firstItem="XGg-to-7mM" firstAttribute="leading" secondItem="hz2-g8-cLD" secondAttribute="leadingMargin" constant="42" id="YPX-bl-IHw"/>
+                            <constraint firstItem="XGg-to-7mM" firstAttribute="top" secondItem="hz2-g8-cLD" secondAttribute="topMargin" constant="60" id="mW3-2c-b88"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l6y-p1-l34" secondAttribute="trailing" constant="25" id="zL7-aE-3Xt"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="desField" destination="5Ta-aM-JMB" id="Bga-4l-df5"/>
+                        <outlet property="endTime" destination="GBd-x6-Hyb" id="DVi-1c-PDU"/>
+                        <outlet property="imgView" destination="ZQT-S8-afd" id="Ih6-vi-N7L"/>
+                        <outlet property="nameField" destination="ID1-8D-GCl" id="qoT-6H-hND"/>
+                        <outlet property="priceField" destination="r0R-ah-cYr" id="yaG-Mv-GDD"/>
+                        <outlet property="startTime" destination="GXe-SX-9ev" id="8cg-a8-xxR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dc1-kD-Vb8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833.5" y="285.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultImage" width="540" height="540"/>
+    </resources>
 </document>
