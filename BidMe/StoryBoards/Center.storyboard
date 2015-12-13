@@ -33,7 +33,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="XCX-do-L9S" kind="showDetail" id="J5I-Gw-AU3"/>
+                                    <segue destination="B0f-93-TJH" kind="showDetail" id="5lt-m4-d06"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -62,62 +62,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u82-LD-P5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1703.5" y="476"/>
-        </scene>
-        <!--Auction Detail View Controller-->
-        <scene sceneID="CcF-MS-JsD">
-            <objects>
-                <viewController storyboardIdentifier="AuctionDetailViewController" id="XCX-do-L9S" customClass="AuctionDetailViewController" customModule="BidMe" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gmi-NT-Upi"/>
-                        <viewControllerLayoutGuide type="bottom" id="IjA-VU-nfp"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="piG-J0-Ezw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mal-To-p4T">
-                                <rect key="frame" x="61" y="576" width="253" height="54"/>
-                                <state key="normal" title="Bid" image="bidnow"/>
-                                <connections>
-                                    <action selector="bidButtonTapped:" destination="XCX-do-L9S" eventType="touchUpInside" id="ROZ-o0-uGA"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ny7-7B-6tp">
-                                <rect key="frame" x="20" y="87" width="335" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2JL-vA-azm">
-                                <rect key="frame" x="49" y="135" width="277" height="277"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jG-jj-I30">
-                                <rect key="frame" x="27" y="434" width="307" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItE-eq-Len">
-                                <rect key="frame" x="27" y="463" width="320" height="73"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="ItemDetailDesc" destination="ItE-eq-Len" id="Kg9-vY-vEP"/>
-                        <outlet property="ItemDetailImage" destination="2JL-vA-azm" id="As7-gH-fP9"/>
-                        <outlet property="ItemDetailLabel" destination="ny7-7B-6tp" id="bpG-vp-NgM"/>
-                        <outlet property="ItemDetailPrice" destination="2jG-jj-I30" id="BQX-tc-2dX"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bmu-4c-qKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1829.5" y="997.5"/>
         </scene>
         <!--Bidding-->
         <scene sceneID="oxf-Qr-USj">
@@ -316,9 +260,88 @@
             </objects>
             <point key="canvasLocation" x="627" y="132"/>
         </scene>
+        <!--Auction Detail View Controller-->
+        <scene sceneID="Vos-pF-pDe">
+            <objects>
+                <viewController storyboardIdentifier="AuctionDetailViewController" id="B0f-93-TJH" customClass="AuctionDetailViewController" customModule="BidMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UxP-cT-BSk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Aju-pV-NjX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RYH-Gt-faD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXC-SY-eRI">
+                                <rect key="frame" x="115" y="596" width="145" height="38"/>
+                                <state key="normal" title="Bid" image="bidnow"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWw-Gg-SKA">
+                                <rect key="frame" x="20" y="80" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V22-3C-yPg">
+                                <rect key="frame" x="49" y="109" width="276" height="276"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ock-KL-GHT">
+                                <rect key="frame" x="49" y="424" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yz-8J-uuf">
+                                <rect key="frame" x="199" y="424" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEJ-Ki-hUl">
+                                <rect key="frame" x="49" y="460" width="297" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="End Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYi-5D-1Vt">
+                                <rect key="frame" x="49" y="494" width="297" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="owner_pic" translatesAutoresizingMaskIntoConstraints="NO" id="a73-sG-R2w">
+                                <rect key="frame" x="262" y="329" width="84" height="81"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPO-hS-3PL">
+                                <rect key="frame" x="49" y="523" width="276" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="ItemDetailCurrentPrice" destination="6yz-8J-uuf" id="dap-28-5fI"/>
+                        <outlet property="ItemDetailDesc" destination="zPO-hS-3PL" id="2Nc-zp-zZb"/>
+                        <outlet property="ItemDetailEndTime" destination="eYi-5D-1Vt" id="dDG-6k-Hbh"/>
+                        <outlet property="ItemDetailImage" destination="V22-3C-yPg" id="m2x-M8-CRA"/>
+                        <outlet property="ItemDetailLabel" destination="JWw-Gg-SKA" id="rX2-G3-sdD"/>
+                        <outlet property="ItemDetailStartPrice" destination="Ock-KL-GHT" id="ep6-RS-w42"/>
+                        <outlet property="ItemDetailStartTime" destination="XEJ-Ki-hUl" id="Khj-yK-xyN"/>
+                        <outlet property="ItemDetailsOwnerIcon" destination="a73-sG-R2w" id="XyK-WA-y4S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vNT-Ba-xiY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1772.5" y="991.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bid" width="249" height="202"/>
         <image name="bidnow" width="285" height="54"/>
+        <image name="owner_pic" width="190" height="190"/>
     </resources>
 </document>
