@@ -55,24 +55,24 @@ class AuctionListViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.auctions.count
     }
-    
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .Default, reuseIdentifier: "cell")
-        
-//        Auction.query().findObjectsInBackgroundWithBlock({(objects: [AnyObject]?, error: NSError?) in
-//            if let auctions = objects {
-//                self.auctions = auctions as! [Auction]
-//                
-//                cell.imageView?.image = self.imageList[indexPath.row]
-//                //        cell.textLabel?.text = itemList[indexPath.row]
-//                cell.textLabel?.text = self.auctions[indexPath.row].item?.name as? String
-//            }
-//        })
-        
-        cell.imageView?.image = UIImage(data: self.auctions[indexPath.row].item!.picture!.getData())
-        cell.textLabel?.text = String(self.auctions[indexPath.row].item!.name!)
+        let cellIdentifier = "AuctionListTableViewCell"
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
+                as! AuctionListTableViewCell
+
+        let auction = auctions[indexPath.row]
+
+        // Configure the cell...
+        cell.itemTitle?.text = String(auction.item!.name!)
+        cell.itemImage?.image = UIImage(data: auction.item!.picture!.getData())
+        cell.itemBasePrice.text = "Start Price  $"+(auction.startPrice?.stringValue)!
+        if(auction.currentPrice == nil) {
+            cell.itemCurrentPrice.text = "Current Price  $0"
+        } else {
+            cell.itemCurrentPrice.text = "Current Price  $" + (auction.currentPrice?.stringValue)!
+        }
         return cell
-        
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
