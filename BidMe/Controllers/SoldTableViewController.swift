@@ -17,8 +17,6 @@ class SoldTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupLeftMenuButton()
-
         loadSampleProducts()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -69,16 +67,6 @@ class SoldTableViewController: UITableViewController {
         return cell
 
     }
-
-    func setupLeftMenuButton() {
-        let leftDrawerButton = MMDrawerBarButtonItem(target: self, action: "leftSideMenuTapped:")
-        self.navigationItem.setLeftBarButtonItem(leftDrawerButton, animated: false)
-    }
-
-    func leftSideMenuTapped(sender: AnyObject) {
-        self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
-    }
-    
 
     /*
     // Override to support conditional editing of the table view.

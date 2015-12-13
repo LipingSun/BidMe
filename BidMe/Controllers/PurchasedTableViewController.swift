@@ -17,8 +17,6 @@ class PurchasedTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupLeftMenuButton()
-        
         edgesForExtendedLayout = .Top
         
         loadSampleProducts()
@@ -70,17 +68,7 @@ class PurchasedTableViewController: UITableViewController {
         cell.priceLabel.text = "Purchase Price: $"+String(product.myPrice)
         return cell
     }
-    
-    
-    func setupLeftMenuButton() {
-        let leftDrawerButton = MMDrawerBarButtonItem(target: self, action: "leftSideMenuTapped:")
-        self.navigationItem.setLeftBarButtonItem(leftDrawerButton, animated: false)
-    }
-    
-    func leftSideMenuTapped(sender: AnyObject) {
-        self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
-    }
-    
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

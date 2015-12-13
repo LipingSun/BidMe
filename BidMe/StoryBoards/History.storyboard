@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="2033.5" y="201.5"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--History Tab View Controller-->
         <scene sceneID="hN8-CP-X8y">
             <objects>
-                <tabBarController id="fPo-zX-bUN" sceneMemberID="viewController">
+                <tabBarController id="fPo-zX-bUN" customClass="HistoryTabViewController" customModule="BidMe" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="lMY-2c-Ylx"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="hRa-vo-hP2">
@@ -180,7 +180,6 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Sold History" image="SoldHistory" id="b25-vP-S4r"/>
-                    <navigationItem key="navigationItem" id="9UX-HI-x1u"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uk4-Y5-X7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

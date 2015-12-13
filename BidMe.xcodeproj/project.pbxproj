@@ -33,6 +33,7 @@
 		EE27967D1C1D6F8500B2B882 /* OngingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE27967A1C1D6F8500B2B882 /* OngingTableViewController.swift */; };
 		EE27967E1C1D6F8500B2B882 /* PurchasedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE27967B1C1D6F8500B2B882 /* PurchasedTableViewController.swift */; };
 		EE27967F1C1D6F8500B2B882 /* SoldTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE27967C1C1D6F8500B2B882 /* SoldTableViewController.swift */; };
+		EE2796831C1D793E00B2B882 /* HistoryTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2796821C1D793E00B2B882 /* HistoryTabViewController.swift */; };
 		EE3DBC611C0D5247001E5889 /* AuctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DBC5E1C0D5247001E5889 /* AuctionTests.swift */; };
 		EE3DBC621C0D5247001E5889 /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DBC5F1C0D5247001E5889 /* ItemTests.swift */; };
 		EE3DBC631C0D5247001E5889 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DBC601C0D5247001E5889 /* UserTests.swift */; };
@@ -109,6 +110,7 @@
 		EE27967A1C1D6F8500B2B882 /* OngingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OngingTableViewController.swift; sourceTree = "<group>"; };
 		EE27967B1C1D6F8500B2B882 /* PurchasedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchasedTableViewController.swift; sourceTree = "<group>"; };
 		EE27967C1C1D6F8500B2B882 /* SoldTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoldTableViewController.swift; sourceTree = "<group>"; };
+		EE2796821C1D793E00B2B882 /* HistoryTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTabViewController.swift; sourceTree = "<group>"; };
 		EE3DBC5E1C0D5247001E5889 /* AuctionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionTests.swift; sourceTree = "<group>"; };
 		EE3DBC5F1C0D5247001E5889 /* ItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
 		EE3DBC601C0D5247001E5889 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 				EED6FD961C101796008D85D4 /* PaypalViewController.swift */,
 				EED6FD981C107E6C008D85D4 /* PGViewController.swift */,
 				EE8F30961C16240900904A6D /* BiddingViewController.swift */,
+				EE2796821C1D793E00B2B882 /* HistoryTabViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -643,6 +646,7 @@
 				EED6FD641C0FFE43008D85D4 /* AccountViewController.swift in Sources */,
 				EE78858E1C10ABC700AC37A7 /* BidMe.xcdatamodeld in Sources */,
 				EED6FD751C0FFFEF008D85D4 /* MyCustomTableViewCell.swift in Sources */,
+				EE2796831C1D793E00B2B882 /* HistoryTabViewController.swift in Sources */,
 				EE27967E1C1D6F8500B2B882 /* PurchasedTableViewController.swift in Sources */,
 				EED6FD821C1001E8008D85D4 /* MMDrawerVisualState.m in Sources */,
 				EED6FD851C1001ED008D85D4 /* UIViewController+MMDrawerController.m in Sources */,
