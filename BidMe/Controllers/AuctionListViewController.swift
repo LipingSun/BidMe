@@ -27,13 +27,14 @@ class AuctionListViewController: UITableViewController {
 //        })
         let auctionQuery = Auction.query()
         auctionQuery.includeKey("item.picture")
-        auctionQuery.findObjectsInBackgroundWithBlock({(objects: [AnyObject]?, error: NSError?) in
-            if let auctions = objects as? [Auction] {
-                self.auctions = auctions
-            }
-            self.tableView.reloadData()
-        })
-//        self.auctions = auctionQuery.findObjects() as! [Auction]
+//        auctionQuery.findObjectsInBackgroundWithBlock({(objects: [AnyObject]?, error: NSError?) in
+//            if let auctions = objects as? [Auction] {
+//                self.auctions = auctions
+//            }
+//            self.tableView.reloadData()
+//        })
+        self.auctions = auctionQuery.findObjects() as! [Auction]
+        self.tableView.reloadData()
 
     }
 
