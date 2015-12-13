@@ -69,7 +69,7 @@
                 <viewControllerPlaceholder storyboardName="Bidding" id="ZzQ-2v-kA6" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fX-bo-Cce" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2181.5" y="1731"/>
+            <point key="canvasLocation" x="2263.5" y="1045"/>
         </scene>
         <!--Left Side View Controller-->
         <scene sceneID="wSy-da-xvB">
@@ -275,6 +275,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXC-SY-eRI">
                                 <rect key="frame" x="115" y="596" width="145" height="38"/>
                                 <state key="normal" title="Bid" image="bidnow"/>
+                                <connections>
+                                    <action selector="bidButtonTapped:" destination="B0f-93-TJH" eventType="touchUpInside" id="1Gd-z7-t04"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWw-Gg-SKA">
                                 <rect key="frame" x="20" y="80" width="335" height="21"/>
