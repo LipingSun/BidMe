@@ -16,9 +16,6 @@ class AuctionDetailViewController: UIViewController {
 
     @IBOutlet var ItemDetailDesc: UILabel!
 
-
-    // This part is newly added
-
     @IBOutlet var ItemDetailCurrentPrice: UILabel!
 
     @IBOutlet var ItemDetailStartPrice: UILabel!
@@ -28,11 +25,6 @@ class AuctionDetailViewController: UIViewController {
     @IBOutlet var ItemDetailEndTime: UILabel!
     
     @IBOutlet var ItemDetailsOwnerIcon: UIImageView!
-    //--------------------------------------
-
-    //var passedValue:String?
-
-    //var passedImage:UIImage?
 
     var auction: Auction?
 
