@@ -39,6 +39,8 @@ class BiddingViewController: UIViewController {
         }
 
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
+
+        self.performSegueWithIdentifier("ShowPayPal", sender: self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,6 +77,9 @@ class BiddingViewController: UIViewController {
                 }
             })
         }
+    }
+
+    @IBAction func backToBidding(unwindSegue: UIStoryboardSegue) {
     }
 
     @IBAction func bidButtonTapped(sender: AnyObject) {

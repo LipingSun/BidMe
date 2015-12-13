@@ -8,90 +8,70 @@
 
 import UIKit
 
-class PaypalViewController: UIViewController, PayPalPaymentDelegate {
+class PaypalViewController: UIViewController, PayPalFuturePaymentDelegate {
 
     var payPalConfig = PayPalConfiguration()
     
     var environment:String = PayPalEnvironmentNoNetwork{
-        
         willSet(newEnvironment){
             if(newEnvironment != environment){
                 PayPalMobile.preconnectWithEnvironment(newEnvironment)
             }
         }
-        
     }
-    
-    
-    var acceptCredictCards: Bool = true{
-        didSet{
-            payPalConfig.acceptCreditCards = acceptCredictCards
+
+    #if HAS_CARDIO
+    var acceptCreditCards: Bool = true {
+    didSet {
+    payPalConfig.acceptCreditCards = acceptCreditCards
+    }
+    }
+    #else
+    var acceptCreditCards: Bool = false {
+        didSet {
+            payPalConfig.acceptCreditCards = acceptCreditCards
         }
-        
     }
+    #endif
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        payPalConfig.acceptCreditCards = acceptCredictCards;
+        payPalConfig.acceptCreditCards = acceptCreditCards
         payPalConfig.merchantName = "BidMe Inc."
-        payPalConfig.merchantPrivacyPolicyURL = NSURL(string: "https://www.sivaganesh.com/privacy.html")
-        payPalConfig.merchantUserAgreementURL = NSURL(string: "https://www.sivaganesh.com/useragreement.html")
+        payPalConfig.merchantPrivacyPolicyURL = NSURL(string: "https://www.paypal.com/webapps/mpp/ua/privacy-full")
+        payPalConfig.merchantUserAgreementURL = NSURL(string: "https://www.paypal.com/webapps/mpp/ua/useragreement-full")
         payPalConfig.languageOrLocale = NSLocale.preferredLanguages()[0]
         payPalConfig.payPalShippingAddressOption = .PayPal;
         PayPalMobile.preconnectWithEnvironment(environment)
         
-        btnPressed(self)
-        
-        
         // Do any additional setup after loading the view, typically from a nib.
+        let futurePaymentViewController = PayPalFuturePaymentViewController(configuration: payPalConfig, delegate: self)
+        presentViewController(futurePaymentViewController, animated: true, completion: nil)
     }
-    
-    
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    func payPalPaymentDidCancel(paymentViewController: PayPalPaymentViewController!) {
-        print("PayPal Payment Cancelled")
-        paymentViewController?.dismissViewControllerAnimated(true, completion: nil)
+
+    @IBAction func authorizeFuturePaymentsAction(sender: AnyObject) {
+        let futurePaymentViewController = PayPalFuturePaymentViewController(configuration: payPalConfig, delegate: self)
+        presentViewController(futurePaymentViewController, animated: true, completion: nil)
     }
-    
-    func payPalPaymentViewController(paymentViewController: PayPalPaymentViewController!, didCompletePayment completedPayment: PayPalPayment!) {
-        print("PayPal Payment Success!")
-        paymentViewController?.dismissViewControllerAnimated(true, completion: { () -> Void in
-            print("Here is your proof of payment:\n\n\(completedPayment.confirmation)\n\nSend this to your server for confirmation and fullfillment.")
+
+
+    func payPalFuturePaymentDidCancel(futurePaymentViewController: PayPalFuturePaymentViewController!) {
+        print("PayPal Future Payment Authorization Canceled")
+        futurePaymentViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
+
+    func payPalFuturePaymentViewController(futurePaymentViewController: PayPalFuturePaymentViewController!, didAuthorizeFuturePayment futurePaymentAuthorization: [NSObject : AnyObject]!) {
+        print("PayPal Future Payment Authorization Success!")
+        // send authorization to your server to get refresh token.
+        futurePaymentViewController?.dismissViewControllerAnimated(true, completion: { () -> Void in
+            self.performSegueWithIdentifier("BackToBidding", sender: self)
         })
-    }
-    
-    @IBAction func btnPressed(sender: AnyObject) {
-        var item1 = PayPalItem(name: "BidMe Inc .", withQuantity: 1,withPrice: NSDecimalNumber(string: "100.00"),withCurrency: "USD", withSku: "0001")
-        let items = [item1]
-        let subtotal = PayPalItem.totalPriceForItems(items)
-        
-        let shipping = NSDecimalNumber(string: "0.00")
-        let tax = NSDecimalNumber(string: "0.00")
-        let paymentDetails = PayPalPaymentDetails(subtotal: subtotal, withShipping: shipping, withTax: tax)
-        
-        let total = subtotal.decimalNumberByAdding(shipping).decimalNumberByAdding(tax)
-        let payment = PayPalPayment(amount: total, currencyCode: "USD", shortDescription: "BidMe Inc. Test", intent: .Sale)
-        
-        
-        payment.items=items
-        payment.paymentDetails = paymentDetails
-        
-        if(payment.processable){
-            
-            let paymentViewController = PayPalPaymentViewController(payment: payment, configuration: payPalConfig, delegate: self)
-            presentViewController(paymentViewController, animated: true, completion: nil)
-        }
-        else{
-            print("Payment not processable")
-        }
-        
-        
     }
 
 }
