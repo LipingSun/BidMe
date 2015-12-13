@@ -1,33 +1,31 @@
 //
-//  PurchasedTableViewController.swift
+//  OngingTableViewController.swift
 //  BidMe
 //
-//  Created by Xiaoxiao Li on 11/30/15.
+//  Created by Xiaoxiao Li on 12/12/15.
 //  Copyright © 2015 CMPE277. All rights reserved.
 //
 
 import UIKit
 
-class PurchasedTableViewController: UITableViewController {
-    
+class OngingTableViewController: UITableViewController {
+
     // MARK: Properties
     
     var products = [Product]()
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        edgesForExtendedLayout = .Top
+
+        setupLeftMenuButton()
 
         loadSampleProducts()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-    
+
     func loadSampleProducts() {
         let photo1 = UIImage(named: "item1")!
         let product1 = Product(name: "First red bag", photo: photo1, endTime: "12/1/2015", myPrice: 80)!
@@ -37,7 +35,6 @@ class PurchasedTableViewController: UITableViewController {
         
         products+=[product1, product2];
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -46,27 +43,38 @@ class PurchasedTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        
+        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
         return products.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cellIdentifier = "PurchasedTableViewCell"
+        let cellIdentifier = "OngoingTableViewCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
-            as! PurchasedTableViewCell
+            as! OngoingTableViewCell
         let product = products[indexPath.row]
-
+        
         // Configure the cell...
         cell.nameLabel.text = product.name
         cell.productPic.image = product.photo
-        cell.dateLabel.text = product.endTime
-        cell.priceLabel.text = String(product.myPrice)
+        cell.dateLabel.text = "Start Time: "+product.endTime!
+        cell.priceLabel.text = "Start Price: $"+String(product.myPrice)
+        cell.currentPriceLabel.text = "Current Price: $0"
         return cell
+    }
+
+    func setupLeftMenuButton() {
+        let leftDrawerButton = MMDrawerBarButtonItem(target: self, action: "leftSideMenuTapped:")
+        self.navigationItem.setLeftBarButtonItem(leftDrawerButton, animated: false)
+    }
+
+    func leftSideMenuTapped(sender: AnyObject) {
+        self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
     }
     
 

@@ -10,6 +10,13 @@ import UIKit
 
 class SoldTableViewCell: UITableViewCell {
 
+    // MARK: Properties
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var productPic: UIImageView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

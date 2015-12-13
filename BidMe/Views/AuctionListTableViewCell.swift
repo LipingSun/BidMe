@@ -1,32 +1,34 @@
 //
-//  OngoingTableViewCell.swift
+//  AuctionListTableViewCell.swift
 //  BidMe
 //
-//  Created by xiaoxiao li on 11/23/15.
+//  Created by Xiaoxiao Li on 12/7/15.
 //  Copyright © 2015 CMPE277. All rights reserved.
 //
 
 import UIKit
 
-class OngoingTableViewCell: UITableViewCell {
-
-    //MARK: properties
+class AuctionListTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var currentPriceLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var productPic: UIImageView!
+    // MARK: Properties
+    
+    @IBOutlet weak var itemImage: UIImageView!
+   
+    @IBOutlet weak var itemTitle: UILabel!
+    
+    @IBOutlet weak var itemBasePrice: UILabel!
+    
+    @IBOutlet weak var itemCurrentPrice: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
+    
 }
