@@ -7,14 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A4002AF1C07C4120054774D /* OngoingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4002AA1C07C4120054774D /* OngoingTableViewCell.swift */; };
 		0A4002B01C07C4120054774D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4002AB1C07C4120054774D /* Product.swift */; };
-		0A4002B11C07C4120054774D /* PurchasedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4002AC1C07C4120054774D /* PurchasedTableViewCell.swift */; };
-		0A4002B21C07C4120054774D /* SoldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4002AD1C07C4120054774D /* SoldTableViewCell.swift */; };
 		1372C66CB4EB26CF9D677645 /* libPods-BidMeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE03A0B225338D9AFC023CE /* libPods-BidMeUITests.a */; };
 		87AC73062C2D02EBE370C354 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AC712E1E40A8A25B689672 /* Map.storyboard */; };
 		87AC761B05EDA3FFF69794C0 /* Auction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AC7683EA0D6F2722BAE2FE /* Auction.storyboard */; };
-		87AC76BA4E93FCFAC70D746D /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AC7E1A89EF147704FA3DA2 /* History.storyboard */; };
 		87AC78211166D0DB8D3BFFD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AC70AF4992435B163CA0BF /* LaunchScreen.storyboard */; };
 		87AC79A1CF20D34C0B09430A /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AC727A79D8E2FA860B584B /* Account.storyboard */; };
 		87AC7EAD4CC9D0F920921BF9 /* Bidding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AC760B0C725ECD6A43B49B /* Bidding.storyboard */; };
@@ -29,11 +25,18 @@
 		EE16F1FB1C0CEF6D00B62C2B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE16F1F61C0CEF6D00B62C2B /* User.swift */; };
 		EE16F2011C0CF9EA00B62C2B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE16F2001C0CF9EA00B62C2B /* RegisterViewController.swift */; };
 		EE16F2031C0D034700B62C2B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE16F2021C0D034700B62C2B /* LoginViewController.swift */; };
+		EE2796711C1D68A300B2B882 /* AuctionListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2796701C1D68A300B2B882 /* AuctionListTableViewCell.swift */; };
+		EE2796731C1D6F0200B2B882 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE2796721C1D6F0200B2B882 /* History.storyboard */; };
+		EE2796771C1D6F5E00B2B882 /* OngoingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2796741C1D6F5E00B2B882 /* OngoingTableViewCell.swift */; };
+		EE2796781C1D6F5E00B2B882 /* PurchasedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2796751C1D6F5E00B2B882 /* PurchasedTableViewCell.swift */; };
+		EE2796791C1D6F5E00B2B882 /* SoldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2796761C1D6F5E00B2B882 /* SoldTableViewCell.swift */; };
+		EE27967D1C1D6F8500B2B882 /* OngingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE27967A1C1D6F8500B2B882 /* OngingTableViewController.swift */; };
+		EE27967E1C1D6F8500B2B882 /* PurchasedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE27967B1C1D6F8500B2B882 /* PurchasedTableViewController.swift */; };
+		EE27967F1C1D6F8500B2B882 /* SoldTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE27967C1C1D6F8500B2B882 /* SoldTableViewController.swift */; };
 		EE3DBC611C0D5247001E5889 /* AuctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DBC5E1C0D5247001E5889 /* AuctionTests.swift */; };
 		EE3DBC621C0D5247001E5889 /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DBC5F1C0D5247001E5889 /* ItemTests.swift */; };
 		EE3DBC631C0D5247001E5889 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3DBC601C0D5247001E5889 /* UserTests.swift */; };
 		EE78858E1C10ABC700AC37A7 /* BidMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EED9F8B91BFEA64100B1688C /* BidMe.xcdatamodeld */; };
-		EE7885921C1130AE00AC37A7 /* PurchasedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7885911C1130AE00AC37A7 /* PurchasedTableViewController.swift */; };
 		EE8F30971C16240900904A6D /* BiddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8F30961C16240900904A6D /* BiddingViewController.swift */; };
 		EE8F30991C16581F00904A6D /* Center.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8F30981C16581F00904A6D /* Center.storyboard */; };
 		EEA354C41C114AEF00843686 /* AuctionEventAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA354C31C114AEF00843686 /* AuctionEventAnnotationView.swift */; };
@@ -73,10 +76,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A4002AA1C07C4120054774D /* OngoingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OngoingTableViewCell.swift; sourceTree = "<group>"; };
 		0A4002AB1C07C4120054774D /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		0A4002AC1C07C4120054774D /* PurchasedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchasedTableViewCell.swift; sourceTree = "<group>"; };
-		0A4002AD1C07C4120054774D /* SoldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoldTableViewCell.swift; sourceTree = "<group>"; };
 		3BE03A0B225338D9AFC023CE /* libPods-BidMeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BidMeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2E852018E7A0D4267A548B /* Pods-BidMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidMeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BidMeUITests/Pods-BidMeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7D94375095A259CCA4FDBB60 /* libPods-BidMeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BidMeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,7 +86,6 @@
 		87AC727A79D8E2FA860B584B /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		87AC760B0C725ECD6A43B49B /* Bidding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bidding.storyboard; sourceTree = "<group>"; };
 		87AC7683EA0D6F2722BAE2FE /* Auction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auction.storyboard; sourceTree = "<group>"; };
-		87AC7E1A89EF147704FA3DA2 /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		99A4263B1C0D3E04001D7909 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		99A4263D1C0D9D51001D7909 /* AuctionEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionEvent.swift; sourceTree = "<group>"; };
 		9CECEF525AB856385A387B0F /* libPods-BidMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BidMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,10 +101,17 @@
 		EE16F1FC1C0CF5AB00B62C2B /* BidMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BidMe-Bridging-Header.h"; path = "../BidMe-Bridging-Header.h"; sourceTree = "<group>"; };
 		EE16F2001C0CF9EA00B62C2B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EE16F2021C0D034700B62C2B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EE2796701C1D68A300B2B882 /* AuctionListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionListTableViewCell.swift; sourceTree = "<group>"; };
+		EE2796721C1D6F0200B2B882 /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		EE2796741C1D6F5E00B2B882 /* OngoingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OngoingTableViewCell.swift; sourceTree = "<group>"; };
+		EE2796751C1D6F5E00B2B882 /* PurchasedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchasedTableViewCell.swift; sourceTree = "<group>"; };
+		EE2796761C1D6F5E00B2B882 /* SoldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoldTableViewCell.swift; sourceTree = "<group>"; };
+		EE27967A1C1D6F8500B2B882 /* OngingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OngingTableViewController.swift; sourceTree = "<group>"; };
+		EE27967B1C1D6F8500B2B882 /* PurchasedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchasedTableViewController.swift; sourceTree = "<group>"; };
+		EE27967C1C1D6F8500B2B882 /* SoldTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoldTableViewController.swift; sourceTree = "<group>"; };
 		EE3DBC5E1C0D5247001E5889 /* AuctionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionTests.swift; sourceTree = "<group>"; };
 		EE3DBC5F1C0D5247001E5889 /* ItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
 		EE3DBC601C0D5247001E5889 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
-		EE7885911C1130AE00AC37A7 /* PurchasedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchasedTableViewController.swift; sourceTree = "<group>"; };
 		EE8F30961C16240900904A6D /* BiddingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiddingViewController.swift; sourceTree = "<group>"; };
 		EE8F30981C16581F00904A6D /* Center.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Center.storyboard; sourceTree = "<group>"; };
 		EEA354C31C114AEF00843686 /* AuctionEventAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionEventAnnotationView.swift; sourceTree = "<group>"; };
@@ -207,9 +213,9 @@
 				87AC727A79D8E2FA860B584B /* Account.storyboard */,
 				87AC7683EA0D6F2722BAE2FE /* Auction.storyboard */,
 				87AC712E1E40A8A25B689672 /* Map.storyboard */,
-				87AC7E1A89EF147704FA3DA2 /* History.storyboard */,
 				87AC70AF4992435B163CA0BF /* LaunchScreen.storyboard */,
 				87AC760B0C725ECD6A43B49B /* Bidding.storyboard */,
+				EE2796721C1D6F0200B2B882 /* History.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -305,6 +311,9 @@
 		EED9F8E41BFEA88D00B1688C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EE27967A1C1D6F8500B2B882 /* OngingTableViewController.swift */,
+				EE27967B1C1D6F8500B2B882 /* PurchasedTableViewController.swift */,
+				EE27967C1C1D6F8500B2B882 /* SoldTableViewController.swift */,
 				EED6FD8E1C1009D0008D85D4 /* AuctionViewController.swift */,
 				EED6FD611C0FFE05008D85D4 /* LeftSideViewController.swift */,
 				EED6FD5F1C0FFDCE008D85D4 /* AuctionListViewController.swift */,
@@ -315,7 +324,6 @@
 				EED6FD921C101619008D85D4 /* AuctionDetailViewController.swift */,
 				EED6FD961C101796008D85D4 /* PaypalViewController.swift */,
 				EED6FD981C107E6C008D85D4 /* PGViewController.swift */,
-				EE7885911C1130AE00AC37A7 /* PurchasedTableViewController.swift */,
 				EE8F30961C16240900904A6D /* BiddingViewController.swift */,
 			);
 			path = Controllers;
@@ -324,11 +332,12 @@
 		EED9F8E51BFEA8DD00B1688C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0A4002AA1C07C4120054774D /* OngoingTableViewCell.swift */,
+				EE2796741C1D6F5E00B2B882 /* OngoingTableViewCell.swift */,
+				EE2796751C1D6F5E00B2B882 /* PurchasedTableViewCell.swift */,
+				EE2796761C1D6F5E00B2B882 /* SoldTableViewCell.swift */,
 				0A4002AB1C07C4120054774D /* Product.swift */,
-				0A4002AC1C07C4120054774D /* PurchasedTableViewCell.swift */,
 				EED6FD741C0FFFEF008D85D4 /* MyCustomTableViewCell.swift */,
-				0A4002AD1C07C4120054774D /* SoldTableViewCell.swift */,
+				EE2796701C1D68A300B2B882 /* AuctionListTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -467,9 +476,9 @@
 				EED9F8BD1BFEA64100B1688C /* Assets.xcassets in Resources */,
 				EE8F30991C16581F00904A6D /* Center.storyboard in Resources */,
 				87AC79A1CF20D34C0B09430A /* Account.storyboard in Resources */,
+				EE2796731C1D6F0200B2B882 /* History.storyboard in Resources */,
 				87AC761B05EDA3FFF69794C0 /* Auction.storyboard in Resources */,
 				87AC73062C2D02EBE370C354 /* Map.storyboard in Resources */,
-				87AC76BA4E93FCFAC70D746D /* History.storyboard in Resources */,
 				87AC78211166D0DB8D3BFFD9 /* LaunchScreen.storyboard in Resources */,
 				87AC7EAD4CC9D0F920921BF9 /* Bidding.storyboard in Resources */,
 			);
@@ -621,34 +630,37 @@
 			files = (
 				EE16F1F91C0CEF6D00B62C2B /* Item.swift in Sources */,
 				EE16F1F81C0CEF6D00B62C2B /* Bidding.swift in Sources */,
+				EE27967D1C1D6F8500B2B882 /* OngingTableViewController.swift in Sources */,
 				EEA354C41C114AEF00843686 /* AuctionEventAnnotationView.swift in Sources */,
 				EED6FD801C1001E8008D85D4 /* MMDrawerBarButtonItem.m in Sources */,
 				EED6FD811C1001E8008D85D4 /* MMDrawerController.m in Sources */,
+				EE2796791C1D6F5E00B2B882 /* SoldTableViewCell.swift in Sources */,
 				EED6FD601C0FFDCE008D85D4 /* AuctionListViewController.swift in Sources */,
 				EE16F2031C0D034700B62C2B /* LoginViewController.swift in Sources */,
 				EED6FD971C101796008D85D4 /* PaypalViewController.swift in Sources */,
 				EE8F30971C16240900904A6D /* BiddingViewController.swift in Sources */,
 				EE16F1FA1C0CEF6D00B62C2B /* Payment.swift in Sources */,
 				EED6FD641C0FFE43008D85D4 /* AccountViewController.swift in Sources */,
-				0A4002B11C07C4120054774D /* PurchasedTableViewCell.swift in Sources */,
 				EE78858E1C10ABC700AC37A7 /* BidMe.xcdatamodeld in Sources */,
 				EED6FD751C0FFFEF008D85D4 /* MyCustomTableViewCell.swift in Sources */,
+				EE27967E1C1D6F8500B2B882 /* PurchasedTableViewController.swift in Sources */,
 				EED6FD821C1001E8008D85D4 /* MMDrawerVisualState.m in Sources */,
 				EED6FD851C1001ED008D85D4 /* UIViewController+MMDrawerController.m in Sources */,
 				EE16F1F71C0CEF6D00B62C2B /* Auction.swift in Sources */,
-				0A4002AF1C07C4120054774D /* OngoingTableViewCell.swift in Sources */,
 				EE16F2011C0CF9EA00B62C2B /* RegisterViewController.swift in Sources */,
+				EE2796781C1D6F5E00B2B882 /* PurchasedTableViewCell.swift in Sources */,
+				EE2796711C1D68A300B2B882 /* AuctionListTableViewCell.swift in Sources */,
 				EED6FD621C0FFE05008D85D4 /* LeftSideViewController.swift in Sources */,
 				EE16F1FB1C0CEF6D00B62C2B /* User.swift in Sources */,
 				EED6FD931C101619008D85D4 /* AuctionDetailViewController.swift in Sources */,
 				EED6FD991C107E6C008D85D4 /* PGViewController.swift in Sources */,
 				99A4263C1C0D3E04001D7909 /* MapViewController.swift in Sources */,
 				99A4263E1C0D9D51001D7909 /* AuctionEvent.swift in Sources */,
-				EE7885921C1130AE00AC37A7 /* PurchasedTableViewController.swift in Sources */,
 				EED9F8B31BFEA64100B1688C /* AppDelegate.swift in Sources */,
 				0A4002B01C07C4120054774D /* Product.swift in Sources */,
+				EE2796771C1D6F5E00B2B882 /* OngoingTableViewCell.swift in Sources */,
+				EE27967F1C1D6F8500B2B882 /* SoldTableViewController.swift in Sources */,
 				EED6FD8F1C1009D0008D85D4 /* AuctionViewController.swift in Sources */,
-				0A4002B21C07C4120054774D /* SoldTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
