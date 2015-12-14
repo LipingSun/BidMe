@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // China Network Node
         AVOSCloud.setApplicationId("b54PwMN1H6mnJTFmMlFQyHql", clientKey: "zDRARxxTnR2lqsGqTM83phxe")
-        
+        CDChatManager.sharedManager().userDelegate = UserFactory()
         AVOSCloud.setAllLogsEnabled(true)
         
         // Paypal

@@ -10,7 +10,9 @@
 		0A4002B01C07C4120054774D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4002AB1C07C4120054774D /* Product.swift */; };
 		1372C66CB4EB26CF9D677645 /* libPods-BidMeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE03A0B225338D9AFC023CE /* libPods-BidMeUITests.a */; };
 		87AC73062C2D02EBE370C354 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AC712E1E40A8A25B689672 /* Map.storyboard */; };
+		87AC7325084C28C17CC25A4D /* UserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AC743E68375179C0DAF2F4 /* UserFactory.swift */; };
 		87AC761B05EDA3FFF69794C0 /* Auction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AC7683EA0D6F2722BAE2FE /* Auction.storyboard */; };
+		87AC762600AAC726A359D878 /* CDUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AC7271FD54D411A839484A /* CDUser.swift */; };
 		87AC78211166D0DB8D3BFFD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AC70AF4992435B163CA0BF /* LaunchScreen.storyboard */; };
 		87AC79A1CF20D34C0B09430A /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AC727A79D8E2FA860B584B /* Account.storyboard */; };
 		87AC7EAD4CC9D0F920921BF9 /* Bidding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AC760B0C725ECD6A43B49B /* Bidding.storyboard */; };
@@ -84,7 +86,9 @@
 		81633CD6820BDB67E39E377E /* Pods-BidMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BidMeTests/Pods-BidMeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		87AC70AF4992435B163CA0BF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87AC712E1E40A8A25B689672 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		87AC7271FD54D411A839484A /* CDUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDUser.swift; sourceTree = "<group>"; };
 		87AC727A79D8E2FA860B584B /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		87AC743E68375179C0DAF2F4 /* UserFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserFactory.swift; sourceTree = "<group>"; };
 		87AC760B0C725ECD6A43B49B /* Bidding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bidding.storyboard; sourceTree = "<group>"; };
 		87AC7683EA0D6F2722BAE2FE /* Auction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auction.storyboard; sourceTree = "<group>"; };
 		99A4263B1C0D3E04001D7909 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -306,6 +310,8 @@
 				EE16F1F51C0CEF6D00B62C2B /* Payment.swift */,
 				EE16F1F61C0CEF6D00B62C2B /* User.swift */,
 				99A4263D1C0D9D51001D7909 /* AuctionEvent.swift */,
+				87AC743E68375179C0DAF2F4 /* UserFactory.swift */,
+				87AC7271FD54D411A839484A /* CDUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -665,6 +671,8 @@
 				EE2796771C1D6F5E00B2B882 /* OngoingTableViewCell.swift in Sources */,
 				EE27967F1C1D6F8500B2B882 /* SoldTableViewController.swift in Sources */,
 				EED6FD8F1C1009D0008D85D4 /* AuctionViewController.swift in Sources */,
+				87AC7325084C28C17CC25A4D /* UserFactory.swift in Sources */,
+				87AC762600AAC726A359D878 /* CDUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

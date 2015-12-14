@@ -310,12 +310,12 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="ZQT-S8-afd">
-                                        <rect key="frame" x="0.0" y="205" width="293" height="54"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="ZQT-S8-afd">
+                                        <rect key="frame" x="0.0" y="205" width="293" height="212"/>
                                         <color key="backgroundColor" red="0.60915320969999998" green="0.56144564689999998" blue="0.5786574471" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7U-ar-rNx">
-                                        <rect key="frame" x="0.0" y="261" width="293" height="206"/>
+                                        <rect key="frame" x="0.0" y="419" width="293" height="48"/>
                                         <color key="backgroundColor" red="0.60915320969999998" green="0.1550533241" blue="0.33143229410000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Xg8-CK-3tC"/>

@@ -50,6 +50,10 @@ class AuctionDetailViewController: UIViewController {
         ItemDetailsOwnerIcon.clipsToBounds = true
         ItemDetailsOwnerIcon.layer.borderWidth = 3.0
         ItemDetailsOwnerIcon.layer.borderColor = UIColor.whiteColor().CGColor
+        ItemDetailsOwnerIcon.userInteractionEnabled = true
+        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:Selector("startChat:"))
+        ItemDetailsOwnerIcon.addGestureRecognizer(tapGestureRecognizer)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,6 +66,21 @@ class AuctionDetailViewController: UIViewController {
         let biddingViewController = storyboard.instantiateViewControllerWithIdentifier("BiddingViewController") as! BiddingViewController
         biddingViewController.auction = auction
         self.showViewController(biddingViewController, sender: self)
+    }
+
+    @IBAction func startChat(sender: AnyObject) {
+        CDChatManager.sharedManager().openWithClientId(User.currentUser().username, callback: { (result: Bool, error: NSError!) -> Void in
+            if (error == nil) {
+                CDChatManager.sharedManager().fetchConvWithOtherId(self.auction!.item!.owner!.username, callback: { (conv: AVIMConversation!, error: NSError!) -> Void in
+                    if (error != nil) {
+                        print("error: \(error)")
+                    } else {
+                        let chatRoomVC = CDChatRoomVC(conv:conv)
+                        self.navigationController?.pushViewController(chatRoomVC, animated: true)
+                    }
+                })
+            }
+        })
     }
 
     /*
