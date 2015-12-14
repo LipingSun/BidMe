@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AVOSCloud
+// import AVOSCloud
 
 class AuctionListViewController: UITableViewController {
     

@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-import AVOSCloud
+// import AVOSCloud
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -9,7 +9,7 @@
 import CoreLocation
 import UIKit
 import MapKit
-import AVOSCloud
+// import AVOSCloud
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 

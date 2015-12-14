@@ -4,22 +4,22 @@
 # use_frameworks!
 
 target 'BidMe' do
-    
-pod 'AVOSCloudDynamic'
+
+# pod 'AVOSCloudDynamic'
+pod 'LeanChatLib', :path => '..'
 pod 'PayPal-iOS-SDK'
 
 end
 
 target 'BidMeTests' do
 
-pod 'AVOSCloudDynamic'
-pod 'PayPal-iOS-SDK'
+# pod 'AVOSCloudDynamic'
+# pod 'PayPal-iOS-SDK'
 
 end
 
 target 'BidMeUITests' do
 
-pod 'AVOSCloudDynamic'
+# pod 'AVOSCloudDynamic'
 
 end
-

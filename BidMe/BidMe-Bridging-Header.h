@@ -6,3 +6,4 @@
 #import "MMDrawerBarButtonItem.h"
 #import "UIViewController+MMDrawerController.h"
 #import "PayPalMobile.h"
+#import <LeanChatLib/LeanChatLib.h>

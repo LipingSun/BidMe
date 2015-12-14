@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AVOSCloud
+// import AVOSCloud
 import MapKit
 
 class Auction: AVObject, AVSubclassing {

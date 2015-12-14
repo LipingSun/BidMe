@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import AVOSCloud
+// import AVOSCloud
 
 @testable import BidMe
 

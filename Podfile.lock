@@ -1,6 +1,21 @@
 PODS:
-  - AVOSCloudDynamic (3.1.6.6)
+  - AVOSCloud (3.1.6.8)
+  - AVOSCloudIM (3.1.6.8):
+    - AVOSCloud
   - CardIO (5.2.2)
+  - DateTools (1.5.0)
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
+  - JSBadgeView (1.4.1)
+  - LeanChatLib (0.2.6):
+    - AVOSCloud (~> 3.1.4)
+    - AVOSCloudIM (~> 3.1.4)
+    - DateTools (= 1.5.0)
+    - FMDB (= 2.5)
+    - JSBadgeView (= 1.4.1)
   - PayPal-iOS-SDK (2.12.7):
     - PayPal-iOS-SDK/CardIO (= 2.12.7)
     - PayPal-iOS-SDK/Core (= 2.12.7)
@@ -9,12 +24,21 @@ PODS:
   - PayPal-iOS-SDK/Core (2.12.7)
 
 DEPENDENCIES:
-  - AVOSCloudDynamic
+  - LeanChatLib (from `..`)
   - PayPal-iOS-SDK
 
+EXTERNAL SOURCES:
+  LeanChatLib:
+    :path: ".."
+
 SPEC CHECKSUMS:
-  AVOSCloudDynamic: d7d15b62e08b81c0e4931bcb4a7409afff7a6392
+  AVOSCloud: 4b06ec4444ca0ee0543e6cf729b11e5f3f956977
+  AVOSCloudIM: a32d9d66d09eff110b3b29f371e7ef2979b11c9c
   CardIO: 2460db0f4936f3441b08d51e3904b436d77ec8fc
+  DateTools: b93a2c2017747329c6077c7d7e8a75106e23d0d7
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  JSBadgeView: 3861ddee41094284d9468e6d0af5107f703aaac5
+  LeanChatLib: 6984334d21a708f8d74b1cd63ed2a7c87aed43c7
   PayPal-iOS-SDK: 401d441844bd6f0e08905dcdd7795f44c5ecef6c
 
 COCOAPODS: 0.39.0
