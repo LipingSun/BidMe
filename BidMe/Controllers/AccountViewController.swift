@@ -10,20 +10,48 @@ import UIKit
 
 class AccountViewController: UIViewController {
 
+    @IBOutlet var userIcon: UIImageView!
+    @IBOutlet var username: UILabel!
+    @IBOutlet var email: UILabel!
+    @IBOutlet var phone: UILabel!
+    @IBOutlet var createTime: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setupLeftMenuButton()
+
+        let user = User.currentUser()
+
+        userIcon.layer.cornerRadius = userIcon.frame.size.width / 2
+        userIcon.clipsToBounds = true
+        userIcon.layer.borderWidth = 3.0
+        userIcon.layer.borderColor = UIColor.whiteColor().CGColor
+
+        username.text = user.username
+        email.text = email.text! + user.email
+        phone.text = phone.text! + String(user.phone!)
+
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        dateFormatter.timeZone = NSTimeZone(name: "PST")
+        createTime.text = createTime.text! + dateFormatter.stringFromDate(user.createdAt!)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func LeftSideMenuTapped(sender: AnyObject) {
-        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        appDelegate.centerContainer?.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+
+
+    func setupLeftMenuButton() {
+        let leftDrawerButton = MMDrawerBarButtonItem(target: self, action: "leftSideMenuTapped:")
+        self.navigationItem.setLeftBarButtonItem(leftDrawerButton, animated: false)
+    }
+
+    func leftSideMenuTapped(sender: AnyObject) {
+        self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
     }
 
     /*

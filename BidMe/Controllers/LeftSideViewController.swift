@@ -50,8 +50,7 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
             centerViewController = self.storyboard!.instantiateViewControllerWithIdentifier("AuctionListTopViewController")
             break
         case 1:
-//            let historyStoryboard: UIStoryboard = UIStoryboard(name: "History", bundle: nil)
-//            centerViewController = historyStoryboard.instantiateViewControllerWithIdentifier("HistoryTopViewController")
+            centerViewController = self.storyboard!.instantiateViewControllerWithIdentifier("AccountTopViewController")
             break
         case 2:
             let mapStoryboard: UIStoryboard = UIStoryboard(name: "Map", bundle: nil)
