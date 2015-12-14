@@ -25,6 +25,7 @@ class AuctionViewController: UIViewController, UINavigationControllerDelegate, U
 
         //create an item
         let item = Item()
+        item.owner = User.currentUser()
         item.name = nameField.text
         item.desc = desField.text
 
