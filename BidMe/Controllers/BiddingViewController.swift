@@ -61,7 +61,20 @@ class BiddingViewController: UIViewController {
                     timeLeft.text = "Time Left: " + String(dateComponentsFormatter.stringFromTimeInterval(interval)!)
                 } else {
                     self.timer.invalidate()
-                    // Todo
+                    let biddingQuery = Bidding.query()
+                    biddingQuery.whereKey("auction", equalTo: auction)
+                    biddingQuery.orderByDescending("price")
+                    biddingQuery.limit = 1
+                    let finalBidding = biddingQuery.findObjects()[0] as! Bidding
+                    if (finalBidding.bidder!.objectId == User.currentUser().objectId) {
+                        let alert = UIAlertController(title: "Congradulation", message: "You win the auction!", preferredStyle: UIAlertControllerStyle.Alert)
+                        alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.Default, handler: nil))
+                        self.presentViewController(alert, animated: true, completion: nil)
+                    } else {
+                        let alert = UIAlertController(title: "Unfortunately", message: "Good luch next time!", preferredStyle: UIAlertControllerStyle.Alert)
+                        alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.Default, handler: nil))
+                        self.presentViewController(alert, animated: true, completion: nil)
+                    }
                 }
             }
 
